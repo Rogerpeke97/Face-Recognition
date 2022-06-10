@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Werror -std=c++14 -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ignacio/Desktop/face-recognition/src/SDL/include 
+CXX_INCLUDES = -I/home/ignacio/Desktop/face-recognition/submodules/SDL/include -I/home/ignacio/Desktop/face-recognition/submodules/imgui 
 

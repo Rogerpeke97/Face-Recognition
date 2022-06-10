@@ -300,10 +300,10 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 PULSE_SIMPLE_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libpulse-simple.so
 
 //Dependencies for the target
-SDL2-static_LIB_DEPENDS:STATIC=general;m;general;dl;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-Wl,--no-undefined;general;-pthread;
+SDL2-static_LIB_DEPENDS:STATIC=general;m;general;dl;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-pthread;general;-Wl,--no-undefined;
 
 //Value Computed by CMake
-SDL2_BINARY_DIR:STATIC=/home/ignacio/Desktop/face-recognition/build/src/SDL
+SDL2_BINARY_DIR:STATIC=/home/ignacio/Desktop/face-recognition/build/submodules/SDL
 
 //Disable installation of SDL2
 SDL2_DISABLE_INSTALL:BOOL=OFF
@@ -315,10 +315,10 @@ SDL2_DISABLE_SDL2MAIN:BOOL=OFF
 SDL2_DISABLE_UNINSTALL:BOOL=OFF
 
 //Dependencies for the target
-SDL2_LIB_DEPENDS:STATIC=general;m;general;dl;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-Wl,--no-undefined;general;-pthread;
+SDL2_LIB_DEPENDS:STATIC=general;m;general;dl;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-pthread;general;-Wl,--no-undefined;
 
 //Value Computed by CMake
-SDL2_SOURCE_DIR:STATIC=/home/ignacio/Desktop/face-recognition/src/SDL
+SDL2_SOURCE_DIR:STATIC=/home/ignacio/Desktop/face-recognition/submodules/SDL
 
 //Use 3Dnow! MMX assembly routines
 SDL_3DNOW:BOOL=ON
@@ -549,8 +549,11 @@ SDL_STATIC:BOOL=ON
 // Code
 SDL_STATIC_PIC:BOOL=OFF
 
+//Build the SDL2_test library
+SDL_TEST:BOOL=ON
+
 //Build the test directory
-SDL_TEST:BOOL=OFF
+SDL_TESTS:BOOL=OFF
 
 //Enable the Threads subsystem
 SDL_THREADS:BOOL=ON
@@ -839,7 +842,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1442,6 +1445,8 @@ KMSDRM_libdrm_INCLUDEDIR:INTERNAL=
 KMSDRM_libdrm_LIBDIR:INTERNAL=
 KMSDRM_libdrm_PREFIX:INTERNAL=
 KMSDRM_libdrm_VERSION:INTERNAL=
+//Have symbol __GLIBC__
+LIBC_IS_GLIBC:INTERNAL=1
 LIBDECOR_CFLAGS:INTERNAL=
 LIBDECOR_CFLAGS_I:INTERNAL=
 LIBDECOR_CFLAGS_OTHER:INTERNAL=

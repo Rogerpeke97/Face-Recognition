@@ -70,125 +70,21 @@ CMakeFiles/FaceRecognition.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/main.cpp -o CMakeFiles/FaceRecognition.dir/src/main.cpp.s
 
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.o: CMakeFiles/FaceRecognition.dir/flags.make
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.o: ../src/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.o -c /home/ignacio/Desktop/face-recognition/src/imgui/imgui.cpp
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ignacio/Desktop/face-recognition/src/imgui/imgui.cpp > CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.i
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/imgui/imgui.cpp -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.s
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.o: CMakeFiles/FaceRecognition.dir/flags.make
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.o: ../src/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.o -c /home/ignacio/Desktop/face-recognition/src/imgui/imgui_demo.cpp
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ignacio/Desktop/face-recognition/src/imgui/imgui_demo.cpp > CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.i
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/imgui/imgui_demo.cpp -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.s
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.o: CMakeFiles/FaceRecognition.dir/flags.make
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.o: ../src/imgui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.o -c /home/ignacio/Desktop/face-recognition/src/imgui/imgui_draw.cpp
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ignacio/Desktop/face-recognition/src/imgui/imgui_draw.cpp > CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.i
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/imgui/imgui_draw.cpp -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.s
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.o: CMakeFiles/FaceRecognition.dir/flags.make
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.o: ../src/imgui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.o -c /home/ignacio/Desktop/face-recognition/src/imgui/imgui_widgets.cpp
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ignacio/Desktop/face-recognition/src/imgui/imgui_widgets.cpp > CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.i
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/imgui/imgui_widgets.cpp -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.s
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/FaceRecognition.dir/flags.make
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.o: ../src/imgui/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.o -c /home/ignacio/Desktop/face-recognition/src/imgui/imgui_impl_opengl3.cpp
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ignacio/Desktop/face-recognition/src/imgui/imgui_impl_opengl3.cpp > CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.i
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.s
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.o: CMakeFiles/FaceRecognition.dir/flags.make
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.o: ../src/imgui/imgui_impl_sdl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.o -c /home/ignacio/Desktop/face-recognition/src/imgui/imgui_impl_sdl.cpp
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ignacio/Desktop/face-recognition/src/imgui/imgui_impl_sdl.cpp > CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.i
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/imgui/imgui_impl_sdl.cpp -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.s
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.o: CMakeFiles/FaceRecognition.dir/flags.make
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.o: ../src/imgui/imgui_tables.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.o -c /home/ignacio/Desktop/face-recognition/src/imgui/imgui_tables.cpp
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ignacio/Desktop/face-recognition/src/imgui/imgui_tables.cpp > CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.i
-
-CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ignacio/Desktop/face-recognition/src/imgui/imgui_tables.cpp -o CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.s
-
 # Object files for target FaceRecognition
 FaceRecognition_OBJECTS = \
-"CMakeFiles/FaceRecognition.dir/src/main.cpp.o" \
-"CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.o" \
-"CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.o" \
-"CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.o" \
-"CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.o" \
-"CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.o" \
-"CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.o" \
-"CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.o"
+"CMakeFiles/FaceRecognition.dir/src/main.cpp.o"
 
 # External object files for target FaceRecognition
 FaceRecognition_EXTERNAL_OBJECTS =
 
 FaceRecognition: CMakeFiles/FaceRecognition.dir/src/main.cpp.o
-FaceRecognition: CMakeFiles/FaceRecognition.dir/src/imgui/imgui.cpp.o
-FaceRecognition: CMakeFiles/FaceRecognition.dir/src/imgui/imgui_demo.cpp.o
-FaceRecognition: CMakeFiles/FaceRecognition.dir/src/imgui/imgui_draw.cpp.o
-FaceRecognition: CMakeFiles/FaceRecognition.dir/src/imgui/imgui_widgets.cpp.o
-FaceRecognition: CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_opengl3.cpp.o
-FaceRecognition: CMakeFiles/FaceRecognition.dir/src/imgui/imgui_impl_sdl.cpp.o
-FaceRecognition: CMakeFiles/FaceRecognition.dir/src/imgui/imgui_tables.cpp.o
 FaceRecognition: CMakeFiles/FaceRecognition.dir/build.make
-FaceRecognition: src/SDL/libSDL2-2.0d.so.0.2300.0
-FaceRecognition: src/SDL/libSDL2maind.a
-FaceRecognition: src/SDL/libSDL2d.a
+FaceRecognition: submodules/SDL/libSDL2maind.a
+FaceRecognition: submodules/SDL/libSDL2d.a
+FaceRecognition: submodules/imgui/libimgui.a
+FaceRecognition: submodules/SDL/libSDL2-2.0d.so.0.2300.0
 FaceRecognition: CMakeFiles/FaceRecognition.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable FaceRecognition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable FaceRecognition"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FaceRecognition.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
