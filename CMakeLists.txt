@@ -29,6 +29,6 @@ target_link_directories(${PROJECT_NAME}
 target_link_libraries(imgui SDL2)
 
 target_link_libraries(${PROJECT_NAME}
-  SDL2 SDL2main SDL2-static 
+  SDL2 SDL2main
   imgui
 )

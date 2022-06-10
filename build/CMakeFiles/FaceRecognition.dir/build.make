@@ -80,7 +80,6 @@ FaceRecognition_EXTERNAL_OBJECTS =
 FaceRecognition: CMakeFiles/FaceRecognition.dir/src/main.cpp.o
 FaceRecognition: CMakeFiles/FaceRecognition.dir/build.make
 FaceRecognition: submodules/SDL/libSDL2maind.a
-FaceRecognition: submodules/SDL/libSDL2d.a
 FaceRecognition: submodules/imgui/libimgui.a
 FaceRecognition: submodules/SDL/libSDL2-2.0d.so.0.2300.0
 FaceRecognition: CMakeFiles/FaceRecognition.dir/link.txt

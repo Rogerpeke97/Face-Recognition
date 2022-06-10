@@ -119,10 +119,9 @@ submodules/imgui/clean: submodules/imgui/CMakeFiles/imgui.dir/clean
 # Target rules for target CMakeFiles/FaceRecognition.dir
 
 # All Build rule for target.
-CMakeFiles/FaceRecognition.dir/all: submodules/SDL/CMakeFiles/SDL2main.dir/all
-CMakeFiles/FaceRecognition.dir/all: submodules/SDL/CMakeFiles/SDL2-static.dir/all
-CMakeFiles/FaceRecognition.dir/all: submodules/SDL/CMakeFiles/SDL2.dir/all
 CMakeFiles/FaceRecognition.dir/all: submodules/imgui/CMakeFiles/imgui.dir/all
+CMakeFiles/FaceRecognition.dir/all: submodules/SDL/CMakeFiles/SDL2.dir/all
+CMakeFiles/FaceRecognition.dir/all: submodules/SDL/CMakeFiles/SDL2main.dir/all
 	$(MAKE) -f CMakeFiles/FaceRecognition.dir/build.make CMakeFiles/FaceRecognition.dir/depend
 	$(MAKE) -f CMakeFiles/FaceRecognition.dir/build.make CMakeFiles/FaceRecognition.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num= "Built target FaceRecognition"
@@ -130,7 +129,7 @@ CMakeFiles/FaceRecognition.dir/all: submodules/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FaceRecognition.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ignacio/Desktop/face-recognition/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ignacio/Desktop/face-recognition/build/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FaceRecognition.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ignacio/Desktop/face-recognition/build/CMakeFiles 0
 .PHONY : CMakeFiles/FaceRecognition.dir/rule

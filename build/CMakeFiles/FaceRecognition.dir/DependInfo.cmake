@@ -17,7 +17,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/ignacio/Desktop/face-recognition/build/submodules/SDL/CMakeFiles/SDL2main.dir/DependInfo.cmake"
-  "/home/ignacio/Desktop/face-recognition/build/submodules/SDL/CMakeFiles/SDL2-static.dir/DependInfo.cmake"
   "/home/ignacio/Desktop/face-recognition/build/submodules/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   "/home/ignacio/Desktop/face-recognition/build/submodules/SDL/CMakeFiles/SDL2.dir/DependInfo.cmake"
   )

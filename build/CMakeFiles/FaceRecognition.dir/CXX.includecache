@@ -47,4 +47,22 @@ imgui_impl_sdl.h
 -
 imgui_impl_opengl3.h
 -
+utils/windowManager/windowManager.h
+/home/ignacio/Desktop/face-recognition/src/utils/windowManager/windowManager.h
+utils/windowManager/windowManager.cpp
+/home/ignacio/Desktop/face-recognition/src/utils/windowManager/windowManager.cpp
+
+/home/ignacio/Desktop/face-recognition/src/utils/windowManager/windowManager.cpp
+SDL2/SDL.h
+-
+SDL2/SDL_opengl.h
+-
+stdio.h
+-
+iostream
+-
+assert.h
+-
+
+/home/ignacio/Desktop/face-recognition/src/utils/windowManager/windowManager.h
 

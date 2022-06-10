@@ -6,4 +6,6 @@ CMakeFiles/FaceRecognition.dir/src/main.cpp.o: ../submodules/imgui/imgui.h
 CMakeFiles/FaceRecognition.dir/src/main.cpp.o: ../submodules/imgui/imgui_impl_opengl3.h
 CMakeFiles/FaceRecognition.dir/src/main.cpp.o: ../submodules/imgui/imgui_impl_sdl.h
 CMakeFiles/FaceRecognition.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/FaceRecognition.dir/src/main.cpp.o: ../src/utils/windowManager/windowManager.cpp
+CMakeFiles/FaceRecognition.dir/src/main.cpp.o: ../src/utils/windowManager/windowManager.h
 

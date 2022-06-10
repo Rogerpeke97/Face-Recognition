@@ -1,14 +1,14 @@
 Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d1e70/fast && /usr/bin/make -f CMakeFiles/cmTC_d1e70.dir/build.make CMakeFiles/cmTC_d1e70.dir/build
+Run Build Command(s):/usr/bin/make cmTC_93288/fast && /usr/bin/make -f CMakeFiles/cmTC_93288.dir/build.make CMakeFiles/cmTC_93288.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d1e70.dir/src.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_d1e70.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_93288.dir/src.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_93288.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
 cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
-make[1]: *** [CMakeFiles/cmTC_d1e70.dir/build.make:66: CMakeFiles/cmTC_d1e70.dir/src.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_93288.dir/build.make:66: CMakeFiles/cmTC_93288.dir/src.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d1e70/fast] Error 2
+make: *** [Makefile:121: cmTC_93288/fast] Error 2
 
 
 Source file was:
@@ -16,14 +16,14 @@ int x = 0; int main(int argc, char **argv) { return 0; }
 Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_49f4c/fast && /usr/bin/make -f CMakeFiles/cmTC_49f4c.dir/build.make CMakeFiles/cmTC_49f4c.dir/build
+Run Build Command(s):/usr/bin/make cmTC_2cfbd/fast && /usr/bin/make -f CMakeFiles/cmTC_2cfbd.dir/build.make CMakeFiles/cmTC_2cfbd.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_49f4c.dir/src.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_49f4c.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_2cfbd.dir/src.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_2cfbd.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command line option ‘-maltivec’
-make[1]: *** [CMakeFiles/cmTC_49f4c.dir/build.make:66: CMakeFiles/cmTC_49f4c.dir/src.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_2cfbd.dir/build.make:66: CMakeFiles/cmTC_2cfbd.dir/src.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_49f4c/fast] Error 2
+make: *** [Makefile:121: cmTC_2cfbd/fast] Error 2
 
 
 Source file was:
@@ -36,14 +36,14 @@ Source file was:
 Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c6a3c/fast && /usr/bin/make -f CMakeFiles/cmTC_c6a3c.dir/build.make CMakeFiles/cmTC_c6a3c.dir/build
+Run Build Command(s):/usr/bin/make cmTC_72cd9/fast && /usr/bin/make -f CMakeFiles/cmTC_72cd9.dir/build.make CMakeFiles/cmTC_72cd9.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c6a3c.dir/src.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_c6a3c.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_72cd9.dir/src.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_72cd9.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command line option ‘-maltivec’
-make[1]: *** [CMakeFiles/cmTC_c6a3c.dir/build.make:66: CMakeFiles/cmTC_c6a3c.dir/src.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_72cd9.dir/build.make:66: CMakeFiles/cmTC_72cd9.dir/src.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c6a3c/fast] Error 2
+make: *** [Makefile:121: cmTC_72cd9/fast] Error 2
 
 
 Source file was:
@@ -55,36 +55,36 @@ Source file was:
 Determining if the include file libunwind.h exists failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d7897/fast && /usr/bin/make -f CMakeFiles/cmTC_d7897.dir/build.make CMakeFiles/cmTC_d7897.dir/build
+Run Build Command(s):/usr/bin/make cmTC_a2c26/fast && /usr/bin/make -f CMakeFiles/cmTC_a2c26.dir/build.make CMakeFiles/cmTC_a2c26.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d7897.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_d7897.dir/CheckIncludeFile.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_a2c26.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_a2c26.dir/CheckIncludeFile.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libunwind.h: No such file or directory
     1 | #include <libunwind.h>
       |          ^~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_d7897.dir/build.make:66: CMakeFiles/cmTC_d7897.dir/CheckIncludeFile.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_a2c26.dir/build.make:66: CMakeFiles/cmTC_a2c26.dir/CheckIncludeFile.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d7897/fast] Error 2
+make: *** [Makefile:121: cmTC_a2c26/fast] Error 2
 
 
 
 Determining if the strlcpy exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_94d2d/fast && /usr/bin/make -f CMakeFiles/cmTC_94d2d.dir/build.make CMakeFiles/cmTC_94d2d.dir/build
+Run Build Command(s):/usr/bin/make cmTC_1e7d9/fast && /usr/bin/make -f CMakeFiles/cmTC_1e7d9.dir/build.make CMakeFiles/cmTC_1e7d9.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_94d2d.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_94d2d.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_1e7d9.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_1e7d9.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
    14 |   return ((int*)(&strlcpy))[argc];
       |                   ^~~~~~~
       |                   strncpy
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_94d2d.dir/build.make:66: CMakeFiles/cmTC_94d2d.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_1e7d9.dir/build.make:66: CMakeFiles/cmTC_1e7d9.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_94d2d/fast] Error 2
+make: *** [Makefile:121: cmTC_1e7d9/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -110,19 +110,19 @@ int main(int argc, char** argv)
 Determining if the strlcat exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ad745/fast && /usr/bin/make -f CMakeFiles/cmTC_ad745.dir/build.make CMakeFiles/cmTC_ad745.dir/build
+Run Build Command(s):/usr/bin/make cmTC_92f97/fast && /usr/bin/make -f CMakeFiles/cmTC_92f97.dir/build.make CMakeFiles/cmTC_92f97.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ad745.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_ad745.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_92f97.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_92f97.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
    14 |   return ((int*)(&strlcat))[argc];
       |                   ^~~~~~~
       |                   strncat
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_ad745.dir/build.make:66: CMakeFiles/cmTC_ad745.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_92f97.dir/build.make:66: CMakeFiles/cmTC_92f97.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ad745/fast] Error 2
+make: *** [Makefile:121: cmTC_92f97/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -148,18 +148,18 @@ int main(int argc, char** argv)
 Determining if the _strrev exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_5803c/fast && /usr/bin/make -f CMakeFiles/cmTC_5803c.dir/build.make CMakeFiles/cmTC_5803c.dir/build
+Run Build Command(s):/usr/bin/make cmTC_61e53/fast && /usr/bin/make -f CMakeFiles/cmTC_61e53.dir/build.make CMakeFiles/cmTC_61e53.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5803c.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_5803c.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_61e53.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_61e53.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strrev’ undeclared (first use in this function)
    14 |   return ((int*)(&_strrev))[argc];
       |                   ^~~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_5803c.dir/build.make:66: CMakeFiles/cmTC_5803c.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_61e53.dir/build.make:66: CMakeFiles/cmTC_61e53.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_5803c/fast] Error 2
+make: *** [Makefile:121: cmTC_61e53/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -185,18 +185,18 @@ int main(int argc, char** argv)
 Determining if the _strupr exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ed3d9/fast && /usr/bin/make -f CMakeFiles/cmTC_ed3d9.dir/build.make CMakeFiles/cmTC_ed3d9.dir/build
+Run Build Command(s):/usr/bin/make cmTC_b87f4/fast && /usr/bin/make -f CMakeFiles/cmTC_b87f4.dir/build.make CMakeFiles/cmTC_b87f4.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ed3d9.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_ed3d9.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_b87f4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_b87f4.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strupr’ undeclared (first use in this function)
    14 |   return ((int*)(&_strupr))[argc];
       |                   ^~~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_ed3d9.dir/build.make:66: CMakeFiles/cmTC_ed3d9.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_b87f4.dir/build.make:66: CMakeFiles/cmTC_b87f4.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ed3d9/fast] Error 2
+make: *** [Makefile:121: cmTC_b87f4/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -222,18 +222,18 @@ int main(int argc, char** argv)
 Determining if the _strlwr exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cf642/fast && /usr/bin/make -f CMakeFiles/cmTC_cf642.dir/build.make CMakeFiles/cmTC_cf642.dir/build
+Run Build Command(s):/usr/bin/make cmTC_505f6/fast && /usr/bin/make -f CMakeFiles/cmTC_505f6.dir/build.make CMakeFiles/cmTC_505f6.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cf642.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_cf642.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_505f6.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_505f6.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strlwr’ undeclared (first use in this function)
    14 |   return ((int*)(&_strlwr))[argc];
       |                   ^~~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_cf642.dir/build.make:66: CMakeFiles/cmTC_cf642.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_505f6.dir/build.make:66: CMakeFiles/cmTC_505f6.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_cf642/fast] Error 2
+make: *** [Makefile:121: cmTC_505f6/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -259,18 +259,18 @@ int main(int argc, char** argv)
 Determining if the itoa exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c6f95/fast && /usr/bin/make -f CMakeFiles/cmTC_c6f95.dir/build.make CMakeFiles/cmTC_c6f95.dir/build
+Run Build Command(s):/usr/bin/make cmTC_f19ea/fast && /usr/bin/make -f CMakeFiles/cmTC_f19ea.dir/build.make CMakeFiles/cmTC_f19ea.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c6f95.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_c6f95.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_f19ea.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_f19ea.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘itoa’ undeclared (first use in this function)
    14 |   return ((int*)(&itoa))[argc];
       |                   ^~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_c6f95.dir/build.make:66: CMakeFiles/cmTC_c6f95.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_f19ea.dir/build.make:66: CMakeFiles/cmTC_f19ea.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c6f95/fast] Error 2
+make: *** [Makefile:121: cmTC_f19ea/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -296,18 +296,18 @@ int main(int argc, char** argv)
 Determining if the _ltoa exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cb350/fast && /usr/bin/make -f CMakeFiles/cmTC_cb350.dir/build.make CMakeFiles/cmTC_cb350.dir/build
+Run Build Command(s):/usr/bin/make cmTC_396ea/fast && /usr/bin/make -f CMakeFiles/cmTC_396ea.dir/build.make CMakeFiles/cmTC_396ea.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cb350.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_cb350.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_396ea.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_396ea.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ltoa’ undeclared (first use in this function)
    14 |   return ((int*)(&_ltoa))[argc];
       |                   ^~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_cb350.dir/build.make:66: CMakeFiles/cmTC_cb350.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_396ea.dir/build.make:66: CMakeFiles/cmTC_396ea.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_cb350/fast] Error 2
+make: *** [Makefile:121: cmTC_396ea/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -333,18 +333,18 @@ int main(int argc, char** argv)
 Determining if the _uitoa exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_fe853/fast && /usr/bin/make -f CMakeFiles/cmTC_fe853.dir/build.make CMakeFiles/cmTC_fe853.dir/build
+Run Build Command(s):/usr/bin/make cmTC_63366/fast && /usr/bin/make -f CMakeFiles/cmTC_63366.dir/build.make CMakeFiles/cmTC_63366.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fe853.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_fe853.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_63366.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_63366.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_uitoa’ undeclared (first use in this function)
    14 |   return ((int*)(&_uitoa))[argc];
       |                   ^~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_fe853.dir/build.make:66: CMakeFiles/cmTC_fe853.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_63366.dir/build.make:66: CMakeFiles/cmTC_63366.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_fe853/fast] Error 2
+make: *** [Makefile:121: cmTC_63366/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -370,18 +370,18 @@ int main(int argc, char** argv)
 Determining if the _ultoa exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_67d5b/fast && /usr/bin/make -f CMakeFiles/cmTC_67d5b.dir/build.make CMakeFiles/cmTC_67d5b.dir/build
+Run Build Command(s):/usr/bin/make cmTC_6f030/fast && /usr/bin/make -f CMakeFiles/cmTC_6f030.dir/build.make CMakeFiles/cmTC_6f030.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_67d5b.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_67d5b.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_6f030.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_6f030.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ultoa’ undeclared (first use in this function)
    14 |   return ((int*)(&_ultoa))[argc];
       |                   ^~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_67d5b.dir/build.make:66: CMakeFiles/cmTC_67d5b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_6f030.dir/build.make:66: CMakeFiles/cmTC_6f030.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_67d5b/fast] Error 2
+make: *** [Makefile:121: cmTC_6f030/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -407,18 +407,18 @@ int main(int argc, char** argv)
 Determining if the _i64toa exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_fc17b/fast && /usr/bin/make -f CMakeFiles/cmTC_fc17b.dir/build.make CMakeFiles/cmTC_fc17b.dir/build
+Run Build Command(s):/usr/bin/make cmTC_03913/fast && /usr/bin/make -f CMakeFiles/cmTC_03913.dir/build.make CMakeFiles/cmTC_03913.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fc17b.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_fc17b.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_03913.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_03913.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_i64toa’ undeclared (first use in this function)
    14 |   return ((int*)(&_i64toa))[argc];
       |                   ^~~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_fc17b.dir/build.make:66: CMakeFiles/cmTC_fc17b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_03913.dir/build.make:66: CMakeFiles/cmTC_03913.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_fc17b/fast] Error 2
+make: *** [Makefile:121: cmTC_03913/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -444,18 +444,18 @@ int main(int argc, char** argv)
 Determining if the _ui64toa exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d80da/fast && /usr/bin/make -f CMakeFiles/cmTC_d80da.dir/build.make CMakeFiles/cmTC_d80da.dir/build
+Run Build Command(s):/usr/bin/make cmTC_2d167/fast && /usr/bin/make -f CMakeFiles/cmTC_2d167.dir/build.make CMakeFiles/cmTC_2d167.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d80da.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_d80da.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_2d167.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_2d167.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ui64toa’ undeclared (first use in this function)
    14 |   return ((int*)(&_ui64toa))[argc];
       |                   ^~~~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_d80da.dir/build.make:66: CMakeFiles/cmTC_d80da.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_2d167.dir/build.make:66: CMakeFiles/cmTC_2d167.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d80da/fast] Error 2
+make: *** [Makefile:121: cmTC_2d167/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -481,19 +481,19 @@ int main(int argc, char** argv)
 Determining if the _stricmp exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_71148/fast && /usr/bin/make -f CMakeFiles/cmTC_71148.dir/build.make CMakeFiles/cmTC_71148.dir/build
+Run Build Command(s):/usr/bin/make cmTC_fc2fc/fast && /usr/bin/make -f CMakeFiles/cmTC_fc2fc.dir/build.make CMakeFiles/cmTC_fc2fc.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_71148.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_71148.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_fc2fc.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_fc2fc.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
    14 |   return ((int*)(&_stricmp))[argc];
       |                   ^~~~~~~~
       |                   strncmp
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_71148.dir/build.make:66: CMakeFiles/cmTC_71148.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_fc2fc.dir/build.make:66: CMakeFiles/cmTC_fc2fc.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_71148/fast] Error 2
+make: *** [Makefile:121: cmTC_fc2fc/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -519,19 +519,19 @@ int main(int argc, char** argv)
 Determining if the _strnicmp exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_46684/fast && /usr/bin/make -f CMakeFiles/cmTC_46684.dir/build.make CMakeFiles/cmTC_46684.dir/build
+Run Build Command(s):/usr/bin/make cmTC_e05c9/fast && /usr/bin/make -f CMakeFiles/cmTC_e05c9.dir/build.make CMakeFiles/cmTC_e05c9.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_46684.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_46684.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_e05c9.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_e05c9.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strnicmp’ undeclared (first use in this function); did you mean ‘strncmp’?
    14 |   return ((int*)(&_strnicmp))[argc];
       |                   ^~~~~~~~~
       |                   strncmp
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_46684.dir/build.make:66: CMakeFiles/cmTC_46684.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_e05c9.dir/build.make:66: CMakeFiles/cmTC_e05c9.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_46684/fast] Error 2
+make: *** [Makefile:121: cmTC_e05c9/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -557,19 +557,19 @@ int main(int argc, char** argv)
 Determining if the _wcsdup exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_61998/fast && /usr/bin/make -f CMakeFiles/cmTC_61998.dir/build.make CMakeFiles/cmTC_61998.dir/build
+Run Build Command(s):/usr/bin/make cmTC_54ddf/fast && /usr/bin/make -f CMakeFiles/cmTC_54ddf.dir/build.make CMakeFiles/cmTC_54ddf.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_61998.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_61998.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_54ddf.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_54ddf.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsdup’ undeclared (first use in this function); did you mean ‘wcsdup’?
    14 |   return ((int*)(&_wcsdup))[argc];
       |                   ^~~~~~~
       |                   wcsdup
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_61998.dir/build.make:66: CMakeFiles/cmTC_61998.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_54ddf.dir/build.make:66: CMakeFiles/cmTC_54ddf.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_61998/fast] Error 2
+make: *** [Makefile:121: cmTC_54ddf/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -595,19 +595,19 @@ int main(int argc, char** argv)
 Determining if the wcslcat exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_dd713/fast && /usr/bin/make -f CMakeFiles/cmTC_dd713.dir/build.make CMakeFiles/cmTC_dd713.dir/build
+Run Build Command(s):/usr/bin/make cmTC_9663d/fast && /usr/bin/make -f CMakeFiles/cmTC_9663d.dir/build.make CMakeFiles/cmTC_9663d.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dd713.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_dd713.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_9663d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_9663d.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
    14 |   return ((int*)(&wcslcat))[argc];
       |                   ^~~~~~~
       |                   wcsncat
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_dd713.dir/build.make:66: CMakeFiles/cmTC_dd713.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_9663d.dir/build.make:66: CMakeFiles/cmTC_9663d.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_dd713/fast] Error 2
+make: *** [Makefile:121: cmTC_9663d/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -633,19 +633,19 @@ int main(int argc, char** argv)
 Determining if the wcslcpy exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_fa797/fast && /usr/bin/make -f CMakeFiles/cmTC_fa797.dir/build.make CMakeFiles/cmTC_fa797.dir/build
+Run Build Command(s):/usr/bin/make cmTC_853c0/fast && /usr/bin/make -f CMakeFiles/cmTC_853c0.dir/build.make CMakeFiles/cmTC_853c0.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fa797.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_fa797.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_853c0.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_853c0.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
    14 |   return ((int*)(&wcslcpy))[argc];
       |                   ^~~~~~~
       |                   wcsncpy
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_fa797.dir/build.make:66: CMakeFiles/cmTC_fa797.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_853c0.dir/build.make:66: CMakeFiles/cmTC_853c0.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_fa797/fast] Error 2
+make: *** [Makefile:121: cmTC_853c0/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -671,19 +671,19 @@ int main(int argc, char** argv)
 Determining if the _wcsicmp exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2914b/fast && /usr/bin/make -f CMakeFiles/cmTC_2914b.dir/build.make CMakeFiles/cmTC_2914b.dir/build
+Run Build Command(s):/usr/bin/make cmTC_b85ce/fast && /usr/bin/make -f CMakeFiles/cmTC_b85ce.dir/build.make CMakeFiles/cmTC_b85ce.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2914b.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_2914b.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_b85ce.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_b85ce.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
    14 |   return ((int*)(&_wcsicmp))[argc];
       |                   ^~~~~~~~
       |                   wcsncmp
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_2914b.dir/build.make:66: CMakeFiles/cmTC_2914b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_b85ce.dir/build.make:66: CMakeFiles/cmTC_b85ce.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_2914b/fast] Error 2
+make: *** [Makefile:121: cmTC_b85ce/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -709,19 +709,19 @@ int main(int argc, char** argv)
 Determining if the _wcsnicmp exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_eeeff/fast && /usr/bin/make -f CMakeFiles/cmTC_eeeff.dir/build.make CMakeFiles/cmTC_eeeff.dir/build
+Run Build Command(s):/usr/bin/make cmTC_ac554/fast && /usr/bin/make -f CMakeFiles/cmTC_ac554.dir/build.make CMakeFiles/cmTC_ac554.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_eeeff.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_eeeff.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_ac554.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_ac554.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsnicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
    14 |   return ((int*)(&_wcsnicmp))[argc];
       |                   ^~~~~~~~~
       |                   wcsncmp
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_eeeff.dir/build.make:66: CMakeFiles/cmTC_eeeff.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_ac554.dir/build.make:66: CMakeFiles/cmTC_ac554.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_eeeff/fast] Error 2
+make: *** [Makefile:121: cmTC_ac554/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -747,19 +747,19 @@ int main(int argc, char** argv)
 Determining if the fopen64 exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_35c3a/fast && /usr/bin/make -f CMakeFiles/cmTC_35c3a.dir/build.make CMakeFiles/cmTC_35c3a.dir/build
+Run Build Command(s):/usr/bin/make cmTC_4c412/fast && /usr/bin/make -f CMakeFiles/cmTC_4c412.dir/build.make CMakeFiles/cmTC_4c412.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_35c3a.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_35c3a.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_4c412.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_4c412.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fopen64’ undeclared (first use in this function); did you mean ‘fopen’?
    14 |   return ((int*)(&fopen64))[argc];
       |                   ^~~~~~~
       |                   fopen
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_35c3a.dir/build.make:66: CMakeFiles/cmTC_35c3a.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_4c412.dir/build.make:66: CMakeFiles/cmTC_4c412.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_35c3a/fast] Error 2
+make: *** [Makefile:121: cmTC_4c412/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -785,19 +785,19 @@ int main(int argc, char** argv)
 Determining if the fseeko64 exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_3c5d2/fast && /usr/bin/make -f CMakeFiles/cmTC_3c5d2.dir/build.make CMakeFiles/cmTC_3c5d2.dir/build
+Run Build Command(s):/usr/bin/make cmTC_e0df8/fast && /usr/bin/make -f CMakeFiles/cmTC_e0df8.dir/build.make CMakeFiles/cmTC_e0df8.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3c5d2.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_3c5d2.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_e0df8.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_e0df8.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fseeko64’ undeclared (first use in this function); did you mean ‘fseeko’?
    14 |   return ((int*)(&fseeko64))[argc];
       |                   ^~~~~~~~
       |                   fseeko
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_3c5d2.dir/build.make:66: CMakeFiles/cmTC_3c5d2.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_e0df8.dir/build.make:66: CMakeFiles/cmTC_e0df8.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_3c5d2/fast] Error 2
+make: *** [Makefile:121: cmTC_e0df8/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -823,10 +823,10 @@ int main(int argc, char** argv)
 Determining if the sysctlbyname exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f0e40/fast && /usr/bin/make -f CMakeFiles/cmTC_f0e40.dir/build.make CMakeFiles/cmTC_f0e40.dir/build
+Run Build Command(s):/usr/bin/make cmTC_a4d3a/fast && /usr/bin/make -f CMakeFiles/cmTC_a4d3a.dir/build.make CMakeFiles/cmTC_a4d3a.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f0e40.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_f0e40.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_a4d3a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_a4d3a.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 In file included from /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:
 /usr/include/x86_64-linux-gnu/sys/sysctl.h:21:2: warning: #warning "The <sys/sysctl.h> header is deprecated and will be removed." [-Wcpp]
    21 | #warning "The <sys/sysctl.h> header is deprecated and will be removed."
@@ -836,9 +836,9 @@ In file included from /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CM
     9 |   return ((int*)(&sysctlbyname))[argc];
       |                   ^~~~~~~~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:9:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_f0e40.dir/build.make:66: CMakeFiles/cmTC_f0e40.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_a4d3a.dir/build.make:66: CMakeFiles/cmTC_a4d3a.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_f0e40/fast] Error 2
+make: *** [Makefile:121: cmTC_a4d3a/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -859,18 +859,18 @@ int main(int argc, char** argv)
 Determining if the elf_aux_info exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c9bac/fast && /usr/bin/make -f CMakeFiles/cmTC_c9bac.dir/build.make CMakeFiles/cmTC_c9bac.dir/build
+Run Build Command(s):/usr/bin/make cmTC_60a4e/fast && /usr/bin/make -f CMakeFiles/cmTC_60a4e.dir/build.make CMakeFiles/cmTC_60a4e.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c9bac.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_c9bac.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_60a4e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_60a4e.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
     8 |   return ((int*)(&elf_aux_info))[argc];
       |                   ^~~~~~~~~~~~
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_c9bac.dir/build.make:66: CMakeFiles/cmTC_c9bac.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_60a4e.dir/build.make:66: CMakeFiles/cmTC_60a4e.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c9bac/fast] Error 2
+make: *** [Makefile:121: cmTC_60a4e/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -890,37 +890,37 @@ int main(int argc, char** argv)
 Determining if the function iconv_open exists in the iconv failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a65d0/fast && /usr/bin/make -f CMakeFiles/cmTC_a65d0.dir/build.make CMakeFiles/cmTC_a65d0.dir/build
+Run Build Command(s):/usr/bin/make cmTC_23e96/fast && /usr/bin/make -f CMakeFiles/cmTC_23e96.dir/build.make CMakeFiles/cmTC_23e96.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a65d0.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_a65d0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a65d0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a65d0.dir/link.txt --verbose=1
-/usr/bin/cc  -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_a65d0.dir/CheckFunctionExists.c.o  -o cmTC_a65d0  -liconv 
+Building C object CMakeFiles/cmTC_23e96.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_23e96.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_23e96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23e96.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_23e96.dir/CheckFunctionExists.c.o  -o cmTC_23e96  -liconv 
 /usr/bin/ld: cannot find -liconv
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_a65d0.dir/build.make:87: cmTC_a65d0] Error 1
+make[1]: *** [CMakeFiles/cmTC_23e96.dir/build.make:87: cmTC_23e96] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a65d0/fast] Error 2
+make: *** [Makefile:121: cmTC_23e96/fast] Error 2
 
 
 
 Determining if the alloca exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_91807/fast && /usr/bin/make -f CMakeFiles/cmTC_91807.dir/build.make CMakeFiles/cmTC_91807.dir/build
+Run Build Command(s):/usr/bin/make cmTC_37af7/fast && /usr/bin/make -f CMakeFiles/cmTC_37af7.dir/build.make CMakeFiles/cmTC_37af7.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_91807.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_91807.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_37af7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_37af7.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘alloca’ undeclared (first use in this function); did you mean ‘valloc’?
     8 |   return ((int*)(&alloca))[argc];
       |                   ^~~~~~
       |                   valloc
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTC_91807.dir/build.make:66: CMakeFiles/cmTC_91807.dir/CheckSymbolExists.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_37af7.dir/build.make:66: CMakeFiles/cmTC_37af7.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_91807/fast] Error 2
+make: *** [Makefile:121: cmTC_37af7/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -940,19 +940,19 @@ int main(int argc, char** argv)
 Determining if the dlopen exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2a9f9/fast && /usr/bin/make -f CMakeFiles/cmTC_2a9f9.dir/build.make CMakeFiles/cmTC_2a9f9.dir/build
+Run Build Command(s):/usr/bin/make cmTC_15262/fast && /usr/bin/make -f CMakeFiles/cmTC_15262.dir/build.make CMakeFiles/cmTC_15262.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2a9f9.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_2a9f9.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_2a9f9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a9f9.dir/link.txt --verbose=1
-/usr/bin/cc  -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"     -rdynamic CMakeFiles/cmTC_2a9f9.dir/CheckSymbolExists.c.o  -o cmTC_2a9f9 
-/usr/bin/ld: CMakeFiles/cmTC_2a9f9.dir/CheckSymbolExists.c.o: in function `main':
+Building C object CMakeFiles/cmTC_15262.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_15262.dir/CheckSymbolExists.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_15262
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15262.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"     -rdynamic CMakeFiles/cmTC_15262.dir/CheckSymbolExists.c.o  -o cmTC_15262 
+/usr/bin/ld: CMakeFiles/cmTC_15262.dir/CheckSymbolExists.c.o: in function `main':
 CheckSymbolExists.c:(.text+0x1f): undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_2a9f9.dir/build.make:87: cmTC_2a9f9] Error 1
+make[1]: *** [CMakeFiles/cmTC_15262.dir/build.make:87: cmTC_15262] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_2a9f9/fast] Error 2
+make: *** [Makefile:121: cmTC_15262/fast] Error 2
 
 
 File /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -972,51 +972,51 @@ int main(int argc, char** argv)
 Determining if the include file audio/audiolib.h exists failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_597cd/fast && /usr/bin/make -f CMakeFiles/cmTC_597cd.dir/build.make CMakeFiles/cmTC_597cd.dir/build
+Run Build Command(s):/usr/bin/make cmTC_bbc0c/fast && /usr/bin/make -f CMakeFiles/cmTC_bbc0c.dir/build.make CMakeFiles/cmTC_bbc0c.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_597cd.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_597cd.dir/CheckIncludeFile.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_bbc0c.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_bbc0c.dir/CheckIncludeFile.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
     1 | #include <audio/audiolib.h>
       |          ^~~~~~~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_597cd.dir/build.make:66: CMakeFiles/cmTC_597cd.dir/CheckIncludeFile.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_bbc0c.dir/build.make:66: CMakeFiles/cmTC_bbc0c.dir/CheckIncludeFile.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_597cd/fast] Error 2
+make: *** [Makefile:121: cmTC_bbc0c/fast] Error 2
 
 
 
 Determining if the include file samplerate.h exists failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d8131/fast && /usr/bin/make -f CMakeFiles/cmTC_d8131.dir/build.make CMakeFiles/cmTC_d8131.dir/build
+Run Build Command(s):/usr/bin/make cmTC_dda04/fast && /usr/bin/make -f CMakeFiles/cmTC_dda04.dir/build.make CMakeFiles/cmTC_dda04.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d8131.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_d8131.dir/CheckIncludeFile.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_dda04.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"    -o CMakeFiles/cmTC_dda04.dir/CheckIncludeFile.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: samplerate.h: No such file or directory
     1 | #include <samplerate.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_d8131.dir/build.make:66: CMakeFiles/cmTC_d8131.dir/CheckIncludeFile.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_dda04.dir/build.make:66: CMakeFiles/cmTC_dda04.dir/CheckIncludeFile.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d8131/fast] Error 2
+make: *** [Makefile:121: cmTC_dda04/fast] Error 2
 
 
 
 Performing C SOURCE FILE Test HAVE_RPI failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1bebc/fast && /usr/bin/make -f CMakeFiles/cmTC_1bebc.dir/build.make CMakeFiles/cmTC_1bebc.dir/build
+Run Build Command(s):/usr/bin/make cmTC_8f85b/fast && /usr/bin/make -f CMakeFiles/cmTC_8f85b.dir/build.make CMakeFiles/cmTC_8f85b.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1bebc.dir/src.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_1bebc.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_8f85b.dir/src.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_8f85b.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
     2 |         #include <bcm_host.h>
       |                  ^~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_1bebc.dir/build.make:66: CMakeFiles/cmTC_1bebc.dir/src.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_8f85b.dir/build.make:66: CMakeFiles/cmTC_8f85b.dir/src.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_1bebc/fast] Error 2
+make: *** [Makefile:121: cmTC_8f85b/fast] Error 2
 
 
 Source file was:
@@ -1030,17 +1030,17 @@ Source file was:
 Performing C SOURCE FILE Test HAVE_VIVANTE_VDK failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a1f63/fast && /usr/bin/make -f CMakeFiles/cmTC_a1f63.dir/build.make CMakeFiles/cmTC_a1f63.dir/build
+Run Build Command(s):/usr/bin/make cmTC_d40e4/fast && /usr/bin/make -f CMakeFiles/cmTC_d40e4.dir/build.make CMakeFiles/cmTC_d40e4.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a1f63.dir/src.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_VIVANTE_VDK     -o CMakeFiles/cmTC_a1f63.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_d40e4.dir/src.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_VIVANTE_VDK     -o CMakeFiles/cmTC_d40e4.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
     2 |         #include <gc_vdk.h>
       |                  ^~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_a1f63.dir/build.make:66: CMakeFiles/cmTC_a1f63.dir/src.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_d40e4.dir/build.make:66: CMakeFiles/cmTC_d40e4.dir/src.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a1f63/fast] Error 2
+make: *** [Makefile:121: cmTC_d40e4/fast] Error 2
 
 
 Source file was:
@@ -1050,17 +1050,17 @@ Source file was:
 Performing C SOURCE FILE Test HAVE_VIVANTE_EGL_FB failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_72778/fast && /usr/bin/make -f CMakeFiles/cmTC_72778.dir/build.make CMakeFiles/cmTC_72778.dir/build
+Run Build Command(s):/usr/bin/make cmTC_5c53d/fast && /usr/bin/make -f CMakeFiles/cmTC_5c53d.dir/build.make CMakeFiles/cmTC_5c53d.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_72778.dir/src.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_VIVANTE_EGL_FB     -o CMakeFiles/cmTC_72778.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_5c53d.dir/src.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos" -DHAVE_VIVANTE_EGL_FB     -o CMakeFiles/cmTC_5c53d.dir/src.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
     4 |         #include <EGL/eglvivante.h>
       |                  ^~~~~~~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_72778.dir/build.make:66: CMakeFiles/cmTC_72778.dir/src.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_5c53d.dir/build.make:66: CMakeFiles/cmTC_5c53d.dir/src.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_72778/fast] Error 2
+make: *** [Makefile:121: cmTC_5c53d/fast] Error 2
 
 
 Source file was:
@@ -1072,17 +1072,17 @@ Source file was:
 Determining if files pthread_np.h exist failed with the following output:
 Change Dir: /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b0a9e/fast && /usr/bin/make -f CMakeFiles/cmTC_b0a9e.dir/build.make CMakeFiles/cmTC_b0a9e.dir/build
+Run Build Command(s):/usr/bin/make cmTC_3f15a/fast && /usr/bin/make -f CMakeFiles/cmTC_3f15a.dir/build.make CMakeFiles/cmTC_3f15a.dir/build
 make[1]: Entering directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b0a9e.dir/HAVE_PTHREAD_NP_H.c.o
-/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"  -D_REENTRANT -pthread     -o CMakeFiles/cmTC_b0a9e.dir/HAVE_PTHREAD_NP_H.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+Building C object CMakeFiles/cmTC_3f15a.dir/HAVE_PTHREAD_NP_H.c.o
+/usr/bin/cc   -idirafter "/home/ignacio/Desktop/face-recognition/submodules/SDL/src/video/khronos"  -D_REENTRANT -pthread     -o CMakeFiles/cmTC_3f15a.dir/HAVE_PTHREAD_NP_H.c.o   -c /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
 /home/ignacio/Desktop/face-recognition/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:2:10: fatal error: pthread_np.h: No such file or directory
     2 | #include <pthread_np.h>
       |          ^~~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_b0a9e.dir/build.make:66: CMakeFiles/cmTC_b0a9e.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_3f15a.dir/build.make:66: CMakeFiles/cmTC_3f15a.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
 make[1]: Leaving directory '/home/ignacio/Desktop/face-recognition/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b0a9e/fast] Error 2
+make: *** [Makefile:121: cmTC_3f15a/fast] Error 2
 
 
 Source:
