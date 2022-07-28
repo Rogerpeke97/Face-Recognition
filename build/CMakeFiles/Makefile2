@@ -119,8 +119,8 @@ submodules/imgui/clean: submodules/imgui/CMakeFiles/imgui.dir/clean
 # Target rules for target CMakeFiles/FaceRecognition.dir
 
 # All Build rule for target.
-CMakeFiles/FaceRecognition.dir/all: submodules/imgui/CMakeFiles/imgui.dir/all
 CMakeFiles/FaceRecognition.dir/all: submodules/SDL/CMakeFiles/SDL2.dir/all
+CMakeFiles/FaceRecognition.dir/all: submodules/imgui/CMakeFiles/imgui.dir/all
 CMakeFiles/FaceRecognition.dir/all: submodules/SDL/CMakeFiles/SDL2main.dir/all
 	$(MAKE) -f CMakeFiles/FaceRecognition.dir/build.make CMakeFiles/FaceRecognition.dir/depend
 	$(MAKE) -f CMakeFiles/FaceRecognition.dir/build.make CMakeFiles/FaceRecognition.dir/build

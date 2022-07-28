@@ -1,14 +1,18 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++14")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -Wall -Werror -std=c++17")
 
 project(FaceRecognition VERSION 0.0.0)
 
+# set(THREADS_PREFER_PTHREAD_FLAG ON)
+
 set(sources
-    src/main.cpp
+src/main.cpp
 )
 # FILE(GLOB sources "src/**.cpp" "src/**.h")
 # file(GLOB sources RELATIVE "src/" "**.cpp" "**.h")
+
+# find_package(Threads REQUIRED)
 
 add_executable(FaceRecognition ${sources})
 
@@ -26,9 +30,10 @@ target_link_directories(${PROJECT_NAME}
 )
 
 # target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
-target_link_libraries(imgui SDL2)
+target_link_libraries(imgui SDL2 GL)
 
 target_link_libraries(${PROJECT_NAME}
   SDL2 SDL2main
   imgui
+  ${CMAKE_DL_LIBS}
 )

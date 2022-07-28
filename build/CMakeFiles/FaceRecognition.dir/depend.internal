@@ -6,6 +6,8 @@ CMakeFiles/FaceRecognition.dir/src/main.cpp.o
  ../submodules/imgui/imgui.h
  ../submodules/imgui/imgui_impl_opengl3.h
  ../submodules/imgui/imgui_impl_sdl.h
+ /home/ignacio/Desktop/face-recognition/src/gui/imgui/Gui.cpp
+ /home/ignacio/Desktop/face-recognition/src/gui/imgui/Gui.h
+ /home/ignacio/Desktop/face-recognition/src/gui/windowManager/WindowManager.cpp
+ /home/ignacio/Desktop/face-recognition/src/gui/windowManager/WindowManager.h
  /home/ignacio/Desktop/face-recognition/src/main.cpp
- /home/ignacio/Desktop/face-recognition/src/utils/windowManager/windowManager.cpp
- /home/ignacio/Desktop/face-recognition/src/utils/windowManager/windowManager.h
