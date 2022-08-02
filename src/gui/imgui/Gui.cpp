@@ -10,6 +10,6 @@ void Gui::init(SDL_Window* currentWindow, SDL_GLContext openGLContextForCurrentW
   ImGuiIO& inputOutput = ImGui::GetIO(); 
   (void)inputOutput;//This (void) casting construct is a no-op that makes the warning of unused parameters/variables go away.
   ImGui::StyleColorsDark();
-  // ImGui_ImplSDL2_InitForOpenGL(currentWindow, openGLContextForCurrentWindow);
-  // ImGui_ImplOpenGL3_Init("#version 130");
+  ImGui_ImplSDL2_InitForOpenGL(currentWindow, openGLContextForCurrentWindow);
+  ImGui_ImplOpenGL3_Init("#version 130");
 }
