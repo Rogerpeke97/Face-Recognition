@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FaceRecognition.dir/src/main.cpp.o"
+  "CMakeFiles/FaceRecognition.dir/src/main.cpp.o.d"
   "FaceRecognition"
   "FaceRecognition.pdb"
 )
