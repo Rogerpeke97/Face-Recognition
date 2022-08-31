@@ -4,18 +4,22 @@
 #include <iostream>
 #include <assert.h>
 #include "WindowManager.h"
-#include <variant>
+#include <map>
+#include <imgui.h>
+#include <imgui_impl_sdl.h>
+#include <imgui_impl_opengl3.h>
+#include "../program/Program.h"
 
 void WindowManager::createWindow() {
   std::cout << "num of displays: " << SDL_GetNumVideoDisplays() << std::endl;
-  std::cout << "width and height: " << windowWidth << " " << windowHeight << std::endl;
+  std::cout << "width and height: " << windowSpecs.windowWidth << " " << windowSpecs.windowHeight << std::endl;
   SDL_DisplayMode displayMode;
   SDL_Init(SDL_INIT_VIDEO);
   for(int i = 0; i < SDL_GetNumVideoDisplays(); ++i){
     int hasDisplay = SDL_GetCurrentDisplayMode(i, &displayMode); // Should return 0 if the function passes
     if(hasDisplay == 0) {
-      windowWidth = displayMode.w;
-      windowHeight = displayMode.h;
+      // windowSpecs.windowWidth = displayMode.w;
+      // windowSpecs.windowHeight = displayMode.h;
       continue;
     }
     std::cout << "hasDisplay: " << hasDisplay << std::endl;
@@ -24,10 +28,8 @@ void WindowManager::createWindow() {
   SDL_Quit();
   SDL_GetCurrentDisplayMode(0, &displayMode);
   unsigned int windowFlags = SDL_WINDOW_OPENGL;
-  currentWindow = SDL_CreateWindow("Face recognition", 0, 0, windowWidth, windowHeight, windowFlags);
+  currentWindow = SDL_CreateWindow("Face recognition", 0, 0, windowSpecs.windowWidth, windowSpecs.windowHeight, windowFlags);
   assert(currentWindow);
-  openGLContextForCurrentWindow = SDL_GL_CreateContext(currentWindow);
-  std::cout << "OPEN GL CONTEXT FOR WINDOW IN WINDOW MANAGER " << openGLContextForCurrentWindow << "\n" << std::endl;  
   isWindowOpen = true;
   bool isWindowFullScreen = false;
   while(isWindowOpen){
@@ -53,15 +55,19 @@ void WindowManager::createWindow() {
       else if (windowEvent.type == SDL_QUIT){
         isWindowOpen = false;
       }
+      if(gui.isRunning){
+        gui.render();
+      }
     }
   }
-}
-std::vector<std::variant<SDL_Window*, SDL_GLContext>> WindowManager::getWindowAndGLContext() {
-  std::vector<std::variant<SDL_Window*, SDL_GLContext>> windowAndGLContext(2);
-  windowAndGLContext.push_back(currentWindow);
-  windowAndGLContext.push_back(openGLContextForCurrentWindow);
-  return windowAndGLContext;
+  gui.destroy();
 }
 bool WindowManager::isWindowActive(){
   return isWindowOpen;
+}
+SDL_Window *WindowManager::getActiveWindow(){
+  return currentWindow;
+}
+WindowSpecs WindowManager::getWindowSpecs(){
+  return windowSpecs;
 }

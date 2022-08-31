@@ -4,15 +4,21 @@
 #include <vector>
 #include <variant>
 
+typedef struct WindowSpecs{
+  int windowWidth;
+  int windowHeight;
+} windowSpecs;
 class WindowManager {
   private: 
-    int windowWidth = 800;
-    int windowHeight = 600;
-    SDL_Window* currentWindow = nullptr;
-    SDL_GLContext openGLContextForCurrentWindow = nullptr;
+    SDL_Window *currentWindow = nullptr;
     bool isWindowOpen = false;
+    WindowSpecs windowSpecs = {
+      800,
+      600
+    };
   public:
     void createWindow();
     bool isWindowActive();
-    std::vector<std::variant<SDL_Window*, SDL_GLContext>> getWindowAndGLContext();
+    SDL_Window *getActiveWindow();
+    WindowSpecs getWindowSpecs();
 };

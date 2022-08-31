@@ -2,6 +2,12 @@
 #include <SDL2/SDL.h>
 
 class Gui {
+  private:
+    SDL_Window *currentWindow = nullptr;
+    WindowSpecs windowSpecs;
   public:
-    void init(SDL_Window* currentWindow, SDL_GLContext openGLContextForCurrentWindow);
+    bool isRunning = false;
+    void init(SDL_Window *currentWindow, WindowSpecs windowSpecs);
+    void render();
+    void destroy();
 };
