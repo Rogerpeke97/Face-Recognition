@@ -30,6 +30,7 @@ void WindowManager::createWindow() {
   unsigned int windowFlags = SDL_WINDOW_OPENGL;
   currentWindow = SDL_CreateWindow("Face recognition", 0, 0, windowSpecs.windowWidth, windowSpecs.windowHeight, windowFlags);
   assert(currentWindow);
+  gui.init();
   isWindowOpen = true;
   bool isWindowFullScreen = false;
   while(isWindowOpen){
@@ -55,9 +56,8 @@ void WindowManager::createWindow() {
       else if (windowEvent.type == SDL_QUIT){
         isWindowOpen = false;
       }
-      if(gui.isRunning){
-        gui.render();
-      }
+      gui.render(&windowEvent);
+      SDL_GL_SwapWindow(currentWindow);
     }
   }
   gui.destroy();

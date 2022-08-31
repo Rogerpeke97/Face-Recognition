@@ -2,24 +2,23 @@
 #include <imgui_impl_sdl.h>
 #include <imgui_impl_opengl3.h>
 #include "Gui.h"
+#include "../program/Program.h"
 
-extern WindowManager windowManager;
-
-void Gui::init(SDL_Window *currentWindow, WindowSpecs windowSpecs) {
-  std::cout << "IN I'm GUI currWindowRef: " << currentWindow << std::endl;
-  windowSpecs = windowSpecs;
+void Gui::init() {
   IMGUI_CHECKVERSION();
   ImGui::CreateContext();
   ImGuiIO& inputOutput = ImGui::GetIO(); 
   (void)inputOutput;//This (void) casting construct is a no-op that makes the warning of unused parameters/variables go away.
   ImGui::StyleColorsDark();
-  SDL_GLContext ctxCurrWindow = SDL_GL_CreateContext(currentWindow);
-  ImGui_ImplSDL2_InitForOpenGL(currentWindow, ctxCurrWindow);
+  SDL_GLContext ctxCurrWindow = SDL_GL_CreateContext(windowManager.getActiveWindow());
+  ImGui_ImplSDL2_InitForOpenGL(windowManager.getActiveWindow(), ctxCurrWindow);
   ImGui_ImplOpenGL3_Init("#version 130");
   isRunning = true;
 }
 
-void Gui::render(){
+void Gui::render(SDL_Event *windowEvent) {
+  WindowSpecs windowSpecs = windowManager.getWindowSpecs();
+  ImGui_ImplSDL2_ProcessEvent(windowEvent);
   ImGui_ImplOpenGL3_NewFrame();
   ImGui_ImplSDL2_NewFrame(currentWindow);
   ImGui::NewFrame();
@@ -35,7 +34,6 @@ void Gui::render(){
   ImGui::End();
   ImGui::Render();
   ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-  SDL_GL_SwapWindow(currentWindow);
 }
 
 void Gui::destroy(){
