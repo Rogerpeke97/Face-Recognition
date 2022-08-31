@@ -13,14 +13,16 @@ void Gui::init() {
   SDL_GLContext ctxCurrWindow = SDL_GL_CreateContext(windowManager.getActiveWindow());
   ImGui_ImplSDL2_InitForOpenGL(windowManager.getActiveWindow(), ctxCurrWindow);
   ImGui_ImplOpenGL3_Init("#version 130");
-  isRunning = true;
 }
 
-void Gui::render(SDL_Event *windowEvent) {
-  WindowSpecs windowSpecs = windowManager.getWindowSpecs();
+void Gui::processKeyEvent(SDL_Event *windowEvent){
   ImGui_ImplSDL2_ProcessEvent(windowEvent);
+}
+
+void Gui::render() {
+  WindowSpecs windowSpecs = windowManager.getWindowSpecs();
   ImGui_ImplOpenGL3_NewFrame();
-  ImGui_ImplSDL2_NewFrame(currentWindow);
+  ImGui_ImplSDL2_NewFrame(windowManager.getActiveWindow());
   ImGui::NewFrame();
   glViewport(0, 0, windowSpecs.windowWidth, windowSpecs.windowHeight);
   glClearColor(0.588f, 0.294f, 0.f, 0.f);

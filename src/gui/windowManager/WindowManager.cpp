@@ -36,6 +36,7 @@ void WindowManager::createWindow() {
   while(isWindowOpen){
     SDL_Event windowEvent;
     while(SDL_PollEvent(&windowEvent)){
+      gui.processKeyEvent(&windowEvent);
       if (windowEvent.type == SDL_KEYDOWN){
         int keyPressed = windowEvent.key.keysym.sym;
         if(keyPressed == SDLK_ESCAPE){
@@ -56,9 +57,9 @@ void WindowManager::createWindow() {
       else if (windowEvent.type == SDL_QUIT){
         isWindowOpen = false;
       }
-      gui.render(&windowEvent);
-      SDL_GL_SwapWindow(currentWindow);
     }
+    gui.render();
+    SDL_GL_SwapWindow(currentWindow);
   }
   gui.destroy();
 }
