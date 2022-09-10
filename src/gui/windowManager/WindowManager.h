@@ -1,8 +1,6 @@
 #pragma once
 #include <SDL2/SDL.h>
 #include <stdio.h>
-#include <vector>
-#include <variant>
 
 typedef struct WindowSpecs{
   int windowWidth;

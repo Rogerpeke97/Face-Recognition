@@ -19,6 +19,28 @@ void Gui::processKeyEvent(SDL_Event *windowEvent){
   ImGui_ImplSDL2_ProcessEvent(windowEvent);
 }
 
+void Gui::createTopNavBar () {
+  ImGui::BeginMainMenuBar();
+  if (ImGui::BeginMenu("File")){
+    if (ImGui::MenuItem("New Simulation", "CTRL+N")){
+      std::cout << "New Sim\n";
+    }
+    ImGui::EndMenu();
+  }
+  ImGui::EndMainMenuBar();
+  // if(ImGui::Begin("", NULL, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar)){
+
+  // }
+  // ImGui::EndMenu();
+  // if (ImGui::BeginMenu("File"))
+  // {
+  //   if (ImGui::MenuItem("Exit"))
+  //   {
+  //     // app->Close();
+  //   }
+  // }
+}
+
 void Gui::render() {
   WindowSpecs windowSpecs = windowManager.getWindowSpecs();
   ImGui_ImplOpenGL3_NewFrame();
@@ -27,13 +49,13 @@ void Gui::render() {
   glViewport(0, 0, windowSpecs.windowWidth, windowSpecs.windowHeight);
   glClearColor(0.588f, 0.294f, 0.f, 0.f);
   glClear(GL_COLOR_BUFFER_BIT);
-  ImGui::Begin("MyWindow");
-  //If you want to use SDL_opengl.h define GL_GLEXT_PROTOTYPES before including it.
-  const ImVec4 textVector = ImVec4(0.588f, 0.294f, 0.f, 0.f);
-  ImGui::TextColored(textVector, "Debug Information");
-  ImGui::BeginChild("Scrolling");
-  ImGui::EndChild();
-  ImGui::End();
+  // ImGui::Begin("MyWindow");
+  // const ImVec4 textVector = ImVec4(0.588f, 0.294f, 0.f, 0.f);
+  // ImGui::TextColored(textVector, "Debug Information");
+  // ImGui::BeginChild("Scrolling");
+  // ImGui::EndChild();
+  this->createTopNavBar();
+  // ImGui::End();
   ImGui::Render();
   ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }
