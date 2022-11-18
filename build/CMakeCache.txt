@@ -34,15 +34,15 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-9
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-9
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -60,15 +60,15 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-9
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-9
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -104,7 +104,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -161,7 +161,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
 //Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
+CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -306,25 +306,25 @@ GBM_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libgbm.so
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //Path to the ImageMagick binary directory.
-IMAGEMAGICK_BINARY_PATH:PATH=/usr/bin
+IMAGEMAGICK_BINARY_PATH:PATH=/usr/local/bin
 
 //Path to ImageMagick's composite executable.
-IMAGEMAGICK_COMPOSITE_EXECUTABLE:FILEPATH=/usr/bin/composite
+IMAGEMAGICK_COMPOSITE_EXECUTABLE:FILEPATH=/usr/local/bin/composite
 
 //Path to ImageMagick's convert executable.
-IMAGEMAGICK_CONVERT_EXECUTABLE:FILEPATH=/usr/bin/convert
+IMAGEMAGICK_CONVERT_EXECUTABLE:FILEPATH=/usr/local/bin/convert
 
 //Path to ImageMagick's import executable.
-IMAGEMAGICK_IMPORT_EXECUTABLE:FILEPATH=/usr/bin/import
+IMAGEMAGICK_IMPORT_EXECUTABLE:FILEPATH=/usr/local/bin/import
 
 //Path to ImageMagick's mogrify executable.
-IMAGEMAGICK_MOGRIFY_EXECUTABLE:FILEPATH=/usr/bin/mogrify
+IMAGEMAGICK_MOGRIFY_EXECUTABLE:FILEPATH=/usr/local/bin/mogrify
 
 //Path to ImageMagick's montage executable.
-IMAGEMAGICK_MONTAGE_EXECUTABLE:FILEPATH=/usr/bin/montage
+IMAGEMAGICK_MONTAGE_EXECUTABLE:FILEPATH=/usr/local/bin/montage
 
 //Path to the ImageMagick binary directory.
-ImageMagick_EXECUTABLE_DIR:PATH=/usr/bin
+ImageMagick_EXECUTABLE_DIR:PATH=/usr/local/bin
 
 //Path to the ImageMagick arch-specific include dir.
 ImageMagick_Magick++_ARCH_INCLUDE_DIR:PATH=ImageMagick_Magick++_ARCH_INCLUDE_DIR-NOTFOUND
@@ -334,27 +334,6 @@ ImageMagick_Magick++_INCLUDE_DIR:PATH=/usr/local/include/ImageMagick-7
 
 //Path to the ImageMagick Magick++ library.
 ImageMagick_Magick++_LIBRARY:FILEPATH=/usr/local/lib/libMagick++-7.Q16HDRI.so
-
-//Path to the ImageMagick arch-specific include dir.
-ImageMagick_MagickCore_ARCH_INCLUDE_DIR:PATH=ImageMagick_MagickCore_ARCH_INCLUDE_DIR-NOTFOUND
-
-//Path to the ImageMagick arch-independent include dir.
-ImageMagick_MagickCore_INCLUDE_DIR:PATH=/usr/local/include/ImageMagick-7
-
-//Path to the ImageMagick Magick++ library.
-ImageMagick_MagickCore_LIBRARY:FILEPATH=/usr/local/lib/libMagickCore-7.Q16HDRI.so
-
-//Path to the ImageMagick arch-specific include dir.
-ImageMagick_MagickWand_ARCH_INCLUDE_DIR:PATH=ImageMagick_MagickWand_ARCH_INCLUDE_DIR-NOTFOUND
-
-//Path to the ImageMagick arch-independent include dir.
-ImageMagick_MagickWand_INCLUDE_DIR:PATH=/usr/local/include/ImageMagick-7
-
-//Path to the ImageMagick Magick++ library.
-ImageMagick_MagickWand_LIBRARY:FILEPATH=/usr/local/lib/libMagickWand-7.Q16HDRI.so
-
-//The directory containing a CMake configuration file for Magick.
-Magick_DIR:PATH=Magick_DIR-NOTFOUND
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -366,7 +345,7 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 PULSE_SIMPLE_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libpulse-simple.so
 
 //Dependencies for the target
-SDL2-static_LIB_DEPENDS:STATIC=general;m;general;dl;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-pthread;general;-Wl,--no-undefined;
+SDL2-static_LIB_DEPENDS:STATIC=general;m;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-pthread;general;-Wl,--no-undefined;
 
 //Value Computed by CMake
 SDL2_BINARY_DIR:STATIC=/home/ignacio/Desktop/face-recognition/build/submodules/SDL
@@ -384,7 +363,7 @@ SDL2_DISABLE_UNINSTALL:BOOL=OFF
 SDL2_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-SDL2_LIB_DEPENDS:STATIC=general;m;general;dl;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-pthread;general;-Wl,--no-undefined;
+SDL2_LIB_DEPENDS:STATIC=general;m;general;dbus-1;general;ibus-1.0;general;gio-2.0;general;gobject-2.0;general;glib-2.0;general;rt;general;-pthread;general;-Wl,--no-undefined;
 
 //Value Computed by CMake
 SDL2_SOURCE_DIR:STATIC=/home/ignacio/Desktop/face-recognition/submodules/SDL
@@ -775,15 +754,6 @@ pkgcfg_lib_PC_Magick++_MagickCore-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagickCor
 pkgcfg_lib_PC_Magick++_MagickWand-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagickWand-7.Q16HDRI.so
 
 //Path to a library.
-pkgcfg_lib_PC_MagickCore_MagickCore-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagickCore-7.Q16HDRI.so
-
-//Path to a library.
-pkgcfg_lib_PC_MagickWand_MagickCore-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagickCore-7.Q16HDRI.so
-
-//Path to a library.
-pkgcfg_lib_PC_MagickWand_MagickWand-7.Q16HDRI:FILEPATH=/usr/local/lib/libMagickWand-7.Q16HDRI.so
-
-//Path to a library.
 pkgcfg_lib_PKG_PULSEAUDIO_pulse:FILEPATH=/usr/lib/x86_64-linux-gnu/libpulse.so
 
 //Path to a library.
@@ -887,10 +857,6 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
-//Have include pthread.h
-CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/ignacio/Desktop/face-recognition
@@ -985,7 +951,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STRIP
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //uname command
-CMAKE_UNAME:INTERNAL=/bin/uname
+CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 DBUS_CFLAGS:INTERNAL=-I/usr/include/dbus-1.0;-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
@@ -994,11 +960,11 @@ DBUS_CFLAGS_OTHER:INTERNAL=
 DBUS_FOUND:INTERNAL=1
 DBUS_INCLUDEDIR:INTERNAL=/usr/include
 DBUS_INCLUDE_DIRS:INTERNAL=/usr/include/dbus-1.0;/usr/lib/x86_64-linux-gnu/dbus-1.0/include
-DBUS_LDFLAGS:INTERNAL=-ldbus-1
+DBUS_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-ldbus-1
 DBUS_LDFLAGS_OTHER:INTERNAL=
 DBUS_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 DBUS_LIBRARIES:INTERNAL=dbus-1
-DBUS_LIBRARY_DIRS:INTERNAL=
+DBUS_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 DBUS_LIBS:INTERNAL=
 DBUS_LIBS_L:INTERNAL=
 DBUS_LIBS_OTHER:INTERNAL=
@@ -1009,33 +975,31 @@ DBUS_STATIC_CFLAGS:INTERNAL=-I/usr/include/dbus-1.0;-I/usr/lib/x86_64-linux-gnu/
 DBUS_STATIC_CFLAGS_I:INTERNAL=
 DBUS_STATIC_CFLAGS_OTHER:INTERNAL=
 DBUS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/dbus-1.0;/usr/lib/x86_64-linux-gnu/dbus-1.0/include
-DBUS_STATIC_LDFLAGS:INTERNAL=-ldbus-1;-lpthread;-lsystemd
+DBUS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-ldbus-1;-lsystemd
 DBUS_STATIC_LDFLAGS_OTHER:INTERNAL=
 DBUS_STATIC_LIBDIR:INTERNAL=
-DBUS_STATIC_LIBRARIES:INTERNAL=dbus-1;pthread;systemd
-DBUS_STATIC_LIBRARY_DIRS:INTERNAL=
+DBUS_STATIC_LIBRARIES:INTERNAL=dbus-1;systemd
+DBUS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 DBUS_STATIC_LIBS:INTERNAL=
 DBUS_STATIC_LIBS_L:INTERNAL=
 DBUS_STATIC_LIBS_OTHER:INTERNAL=
 DBUS_STATIC_LIBS_PATHS:INTERNAL=
-DBUS_VERSION:INTERNAL=1.12.16
+DBUS_VERSION:INTERNAL=1.12.20
 DBUS_dbus-1_INCLUDEDIR:INTERNAL=
 DBUS_dbus-1_LIBDIR:INTERNAL=
 DBUS_dbus-1_PREFIX:INTERNAL=
 DBUS_dbus-1_VERSION:INTERNAL=
-//Have library dl
-DLOPEN_LIB:INTERNAL=1
 EGL_CFLAGS:INTERNAL=
 EGL_CFLAGS_I:INTERNAL=
 EGL_CFLAGS_OTHER:INTERNAL=
 EGL_FOUND:INTERNAL=1
 EGL_INCLUDEDIR:INTERNAL=/usr/include
 EGL_INCLUDE_DIRS:INTERNAL=
-EGL_LDFLAGS:INTERNAL=-lEGL
+EGL_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lEGL
 EGL_LDFLAGS_OTHER:INTERNAL=
 EGL_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 EGL_LIBRARIES:INTERNAL=EGL
-EGL_LIBRARY_DIRS:INTERNAL=
+EGL_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 EGL_LIBS:INTERNAL=
 EGL_LIBS_L:INTERNAL=
 EGL_LIBS_OTHER:INTERNAL=
@@ -1046,11 +1010,11 @@ EGL_STATIC_CFLAGS:INTERNAL=
 EGL_STATIC_CFLAGS_I:INTERNAL=
 EGL_STATIC_CFLAGS_OTHER:INTERNAL=
 EGL_STATIC_INCLUDE_DIRS:INTERNAL=
-EGL_STATIC_LDFLAGS:INTERNAL=-lEGL
+EGL_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lEGL
 EGL_STATIC_LDFLAGS_OTHER:INTERNAL=
 EGL_STATIC_LIBDIR:INTERNAL=
 EGL_STATIC_LIBRARIES:INTERNAL=EGL
-EGL_STATIC_LIBRARY_DIRS:INTERNAL=
+EGL_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 EGL_STATIC_LIBS:INTERNAL=
 EGL_STATIC_LIBS_L:INTERNAL=
 EGL_STATIC_LIBS_OTHER:INTERNAL=
@@ -1063,11 +1027,9 @@ EGL_egl_VERSION:INTERNAL=
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.34.1()]
 //Details about finding ImageMagick
-FIND_PACKAGE_MESSAGE_DETAILS_ImageMagick:INTERNAL=[/usr/local/lib/libMagick++-7.Q16HDRI.so][v6.9.11-60()]
+FIND_PACKAGE_MESSAGE_DETAILS_ImageMagick:INTERNAL=[/usr/local/lib/libMagick++-7.Q16HDRI.so][v7.1.0-53()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Have library rt
 FOUND_CLOCK_GETTIME:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -1133,7 +1095,7 @@ HAVE_COSF:INTERNAL=1
 //Have include ctype.h
 HAVE_CTYPE_H:INTERNAL=1
 //Have symbol dlopen
-HAVE_DLOPEN:INTERNAL=
+HAVE_DLOPEN:INTERNAL=1
 //Have symbol elf_aux_info
 HAVE_ELF_AUX_INFO:INTERNAL=
 //Test HAVE_ENABLE_NEW_DTAGS
@@ -1490,11 +1452,11 @@ IBUS_CFLAGS_OTHER:INTERNAL=-pthread
 IBUS_FOUND:INTERNAL=1
 IBUS_INCLUDEDIR:INTERNAL=/usr/include
 IBUS_INCLUDE_DIRS:INTERNAL=/usr/include/ibus-1.0;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
-IBUS_LDFLAGS:INTERNAL=-libus-1.0;-lgio-2.0;-lgobject-2.0;-lglib-2.0
+IBUS_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-libus-1.0;-lgio-2.0;-lgobject-2.0;-lglib-2.0
 IBUS_LDFLAGS_OTHER:INTERNAL=
 IBUS_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 IBUS_LIBRARIES:INTERNAL=ibus-1.0;gio-2.0;gobject-2.0;glib-2.0
-IBUS_LIBRARY_DIRS:INTERNAL=
+IBUS_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 IBUS_LIBS:INTERNAL=
 IBUS_LIBS_L:INTERNAL=
 IBUS_LIBS_OTHER:INTERNAL=
@@ -1505,16 +1467,16 @@ IBUS_STATIC_CFLAGS:INTERNAL=-pthread;-I/usr/include/ibus-1.0;-I/usr/include/libm
 IBUS_STATIC_CFLAGS_I:INTERNAL=
 IBUS_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
 IBUS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/ibus-1.0;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
-IBUS_STATIC_LDFLAGS:INTERNAL=-libus-1.0;-lgio-2.0;-ldl;-pthread;-lresolv;-lgmodule-2.0;-pthread;-ldl;-lz;-lmount;-lblkid;-lselinux;-lsepol;-lpcre2-8;-pthread;-lgobject-2.0;-pthread;-lffi;-lglib-2.0;-pthread;-lpcre;-pthread
+IBUS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-L/usr/lib;-L/usr/lib/x86_64-linux-gnu;-libus-1.0;-lgio-2.0;-lgmodule-2.0;-pthread;-lz;-lmount;-ldl;-lblkid;-lselinux;-lsepol;-lpcre2-8;-lgobject-2.0;-lffi;-lglib-2.0;-pthread;-lm;-lpcre
 IBUS_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 IBUS_STATIC_LIBDIR:INTERNAL=
-IBUS_STATIC_LIBRARIES:INTERNAL=ibus-1.0;gio-2.0;dl;resolv;gmodule-2.0;dl;z;mount;blkid;selinux;sepol;pcre2-8;gobject-2.0;ffi;glib-2.0;pcre
-IBUS_STATIC_LIBRARY_DIRS:INTERNAL=
+IBUS_STATIC_LIBRARIES:INTERNAL=ibus-1.0;gio-2.0;gmodule-2.0;z;mount;dl;blkid;selinux;sepol;pcre2-8;gobject-2.0;ffi;glib-2.0;m;pcre
+IBUS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib;/usr/lib/x86_64-linux-gnu
 IBUS_STATIC_LIBS:INTERNAL=
 IBUS_STATIC_LIBS_L:INTERNAL=
 IBUS_STATIC_LIBS_OTHER:INTERNAL=
 IBUS_STATIC_LIBS_PATHS:INTERNAL=
-IBUS_VERSION:INTERNAL=1.5.22
+IBUS_VERSION:INTERNAL=1.5.26
 IBUS_ibus-1.0_INCLUDEDIR:INTERNAL=
 IBUS_ibus-1.0_LIBDIR:INTERNAL=
 IBUS_ibus-1.0_PREFIX:INTERNAL=
@@ -1666,86 +1628,16 @@ PC_Magick++_STATIC_CFLAGS:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKC
 PC_Magick++_STATIC_CFLAGS_I:INTERNAL=
 PC_Magick++_STATIC_CFLAGS_OTHER:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16
 PC_Magick++_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include/ImageMagick-7
-PC_Magick++_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagick++-7.Q16HDRI;-lm;-lMagickWand-7.Q16HDRI;-lXext;-lXt;-lSM;-lICE;-lX11;-lz;-lm;-lpthread;-lgomp;-lm;-lMagickCore-7.Q16HDRI;-lXext;-lXt;-lSM;-lICE;-lX11;-lz;-lm;-lpthread;-lgomp;-lm
+PC_Magick++_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagick++-7.Q16HDRI;-lm;-lMagickWand-7.Q16HDRI;-ljbig;-llcms2;-ltiff;-lfreetype;-ljpeg;-llqr-1;-lglib-2.0;-lpng16;-lz;-ldjvulibre;-lfontconfig;-lfreetype;-lheif;-lwebpmux;-lwebpdemux;-lwebp;-lXext;-lXt;-lSM;-lICE;-lX11;-llzma;-lbz2;-lIlmImf-2_5;-lImath-2_5;-lHalf-2_5;-lIex-2_5;-lIexMath-2_5;-lIlmThread-2_5;-lopenjp2;-lpangocairo-1.0;-lpango-1.0;-lgobject-2.0;-lglib-2.0;-lharfbuzz;-lcairo;-lxml2;-lz;-lm;-lpthread;-lgomp;-lm;-lMagickCore-7.Q16HDRI;-ljbig;-llcms2;-ltiff;-lfreetype;-ljpeg;-llqr-1;-lglib-2.0;-lpng16;-lz;-ldjvulibre;-lfontconfig;-lfreetype;-lheif;-lwebpmux;-lwebpdemux;-lwebp;-lXext;-lXt;-lSM;-lICE;-lX11;-llzma;-lbz2;-lIlmImf-2_5;-lImath-2_5;-lHalf-2_5;-lIex-2_5;-lIexMath-2_5;-lIlmThread-2_5;-lopenjp2;-lpangocairo-1.0;-lpango-1.0;-lgobject-2.0;-lglib-2.0;-lharfbuzz;-lcairo;-lxml2;-lz;-lm;-lpthread;-lgomp;-lm
 PC_Magick++_STATIC_LDFLAGS_OTHER:INTERNAL=
 PC_Magick++_STATIC_LIBDIR:INTERNAL=
-PC_Magick++_STATIC_LIBRARIES:INTERNAL=Magick++-7.Q16HDRI;m;MagickWand-7.Q16HDRI;Xext;Xt;SM;ICE;X11;z;m;pthread;gomp;m;MagickCore-7.Q16HDRI;Xext;Xt;SM;ICE;X11;z;m;pthread;gomp;m
+PC_Magick++_STATIC_LIBRARIES:INTERNAL=Magick++-7.Q16HDRI;m;MagickWand-7.Q16HDRI;jbig;lcms2;tiff;freetype;jpeg;lqr-1;glib-2.0;png16;z;djvulibre;fontconfig;freetype;heif;webpmux;webpdemux;webp;Xext;Xt;SM;ICE;X11;lzma;bz2;IlmImf-2_5;Imath-2_5;Half-2_5;Iex-2_5;IexMath-2_5;IlmThread-2_5;openjp2;pangocairo-1.0;pango-1.0;gobject-2.0;glib-2.0;harfbuzz;cairo;xml2;z;m;pthread;gomp;m;MagickCore-7.Q16HDRI;jbig;lcms2;tiff;freetype;jpeg;lqr-1;glib-2.0;png16;z;djvulibre;fontconfig;freetype;heif;webpmux;webpdemux;webp;Xext;Xt;SM;ICE;X11;lzma;bz2;IlmImf-2_5;Imath-2_5;Half-2_5;Iex-2_5;IexMath-2_5;IlmThread-2_5;openjp2;pangocairo-1.0;pango-1.0;gobject-2.0;glib-2.0;harfbuzz;cairo;xml2;z;m;pthread;gomp;m
 PC_Magick++_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
 PC_Magick++_STATIC_LIBS:INTERNAL=
 PC_Magick++_STATIC_LIBS_L:INTERNAL=
 PC_Magick++_STATIC_LIBS_OTHER:INTERNAL=
 PC_Magick++_STATIC_LIBS_PATHS:INTERNAL=
 PC_Magick++_VERSION:INTERNAL=7.1.0
-PC_MagickCore_CFLAGS:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-I/usr/local/include/ImageMagick-7
-PC_MagickCore_CFLAGS_I:INTERNAL=
-PC_MagickCore_CFLAGS_OTHER:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16
-PC_MagickCore_FOUND:INTERNAL=1
-PC_MagickCore_INCLUDEDIR:INTERNAL=/usr/local/include/ImageMagick-7
-PC_MagickCore_INCLUDE_DIRS:INTERNAL=/usr/local/include/ImageMagick-7
-PC_MagickCore_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagickCore-7.Q16HDRI
-PC_MagickCore_LDFLAGS_OTHER:INTERNAL=
-PC_MagickCore_LIBDIR:INTERNAL=/usr/local/lib
-PC_MagickCore_LIBRARIES:INTERNAL=MagickCore-7.Q16HDRI
-PC_MagickCore_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-PC_MagickCore_LIBS:INTERNAL=
-PC_MagickCore_LIBS_L:INTERNAL=
-PC_MagickCore_LIBS_OTHER:INTERNAL=
-PC_MagickCore_LIBS_PATHS:INTERNAL=
-PC_MagickCore_MODULE_NAME:INTERNAL=MagickCore
-PC_MagickCore_MagickCore_INCLUDEDIR:INTERNAL=
-PC_MagickCore_MagickCore_LIBDIR:INTERNAL=
-PC_MagickCore_MagickCore_PREFIX:INTERNAL=
-PC_MagickCore_MagickCore_VERSION:INTERNAL=
-PC_MagickCore_PREFIX:INTERNAL=/usr/local
-PC_MagickCore_STATIC_CFLAGS:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-I/usr/local/include/ImageMagick-7
-PC_MagickCore_STATIC_CFLAGS_I:INTERNAL=
-PC_MagickCore_STATIC_CFLAGS_OTHER:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16
-PC_MagickCore_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include/ImageMagick-7
-PC_MagickCore_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagickCore-7.Q16HDRI;-lXext;-lXt;-lSM;-lICE;-lX11;-lz;-lm;-lpthread;-lgomp;-lm
-PC_MagickCore_STATIC_LDFLAGS_OTHER:INTERNAL=
-PC_MagickCore_STATIC_LIBDIR:INTERNAL=
-PC_MagickCore_STATIC_LIBRARIES:INTERNAL=MagickCore-7.Q16HDRI;Xext;Xt;SM;ICE;X11;z;m;pthread;gomp;m
-PC_MagickCore_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-PC_MagickCore_STATIC_LIBS:INTERNAL=
-PC_MagickCore_STATIC_LIBS_L:INTERNAL=
-PC_MagickCore_STATIC_LIBS_OTHER:INTERNAL=
-PC_MagickCore_STATIC_LIBS_PATHS:INTERNAL=
-PC_MagickCore_VERSION:INTERNAL=7.1.0
-PC_MagickWand_CFLAGS:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-I/usr/local/include/ImageMagick-7
-PC_MagickWand_CFLAGS_I:INTERNAL=
-PC_MagickWand_CFLAGS_OTHER:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16
-PC_MagickWand_FOUND:INTERNAL=1
-PC_MagickWand_INCLUDEDIR:INTERNAL=/usr/local/include/ImageMagick-7
-PC_MagickWand_INCLUDE_DIRS:INTERNAL=/usr/local/include/ImageMagick-7
-PC_MagickWand_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagickWand-7.Q16HDRI;-lMagickCore-7.Q16HDRI
-PC_MagickWand_LDFLAGS_OTHER:INTERNAL=
-PC_MagickWand_LIBDIR:INTERNAL=/usr/local/lib
-PC_MagickWand_LIBRARIES:INTERNAL=MagickWand-7.Q16HDRI;MagickCore-7.Q16HDRI
-PC_MagickWand_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-PC_MagickWand_LIBS:INTERNAL=
-PC_MagickWand_LIBS_L:INTERNAL=
-PC_MagickWand_LIBS_OTHER:INTERNAL=
-PC_MagickWand_LIBS_PATHS:INTERNAL=
-PC_MagickWand_MODULE_NAME:INTERNAL=MagickWand
-PC_MagickWand_MagickWand_INCLUDEDIR:INTERNAL=
-PC_MagickWand_MagickWand_LIBDIR:INTERNAL=
-PC_MagickWand_MagickWand_PREFIX:INTERNAL=
-PC_MagickWand_MagickWand_VERSION:INTERNAL=
-PC_MagickWand_PREFIX:INTERNAL=/usr/local
-PC_MagickWand_STATIC_CFLAGS:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-I/usr/local/include/ImageMagick-7
-PC_MagickWand_STATIC_CFLAGS_I:INTERNAL=
-PC_MagickWand_STATIC_CFLAGS_OTHER:INTERNAL=-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16;-fopenmp;-DMAGICKCORE_HDRI_ENABLE=1;-DMAGICKCORE_QUANTUM_DEPTH=16
-PC_MagickWand_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include/ImageMagick-7
-PC_MagickWand_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lMagickWand-7.Q16HDRI;-lXext;-lXt;-lSM;-lICE;-lX11;-lz;-lm;-lpthread;-lgomp;-lm;-lMagickCore-7.Q16HDRI;-lXext;-lXt;-lSM;-lICE;-lX11;-lz;-lm;-lpthread;-lgomp;-lm
-PC_MagickWand_STATIC_LDFLAGS_OTHER:INTERNAL=
-PC_MagickWand_STATIC_LIBDIR:INTERNAL=
-PC_MagickWand_STATIC_LIBRARIES:INTERNAL=MagickWand-7.Q16HDRI;Xext;Xt;SM;ICE;X11;z;m;pthread;gomp;m;MagickCore-7.Q16HDRI;Xext;Xt;SM;ICE;X11;z;m;pthread;gomp;m
-PC_MagickWand_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
-PC_MagickWand_STATIC_LIBS:INTERNAL=
-PC_MagickWand_STATIC_LIBS_L:INTERNAL=
-PC_MagickWand_STATIC_LIBS_OTHER:INTERNAL=
-PC_MagickWand_STATIC_LIBS_PATHS:INTERNAL=
-PC_MagickWand_VERSION:INTERNAL=7.1.0
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
@@ -1831,11 +1723,11 @@ PKG_PULSEAUDIO_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
 PKG_PULSEAUDIO_FOUND:INTERNAL=1
 PKG_PULSEAUDIO_INCLUDEDIR:INTERNAL=/usr/include
 PKG_PULSEAUDIO_INCLUDE_DIRS:INTERNAL=
-PKG_PULSEAUDIO_LDFLAGS:INTERNAL=-lpulse-simple;-lpulse
-PKG_PULSEAUDIO_LDFLAGS_OTHER:INTERNAL=
+PKG_PULSEAUDIO_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lpulse-simple;-pthread;-lpulse;-pthread
+PKG_PULSEAUDIO_LDFLAGS_OTHER:INTERNAL=-pthread
 PKG_PULSEAUDIO_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 PKG_PULSEAUDIO_LIBRARIES:INTERNAL=pulse-simple;pulse
-PKG_PULSEAUDIO_LIBRARY_DIRS:INTERNAL=
+PKG_PULSEAUDIO_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 PKG_PULSEAUDIO_LIBS:INTERNAL=
 PKG_PULSEAUDIO_LIBS_L:INTERNAL=
 PKG_PULSEAUDIO_LIBS_OTHER:INTERNAL=
@@ -1846,16 +1738,16 @@ PKG_PULSEAUDIO_STATIC_CFLAGS:INTERNAL=-D_REENTRANT
 PKG_PULSEAUDIO_STATIC_CFLAGS_I:INTERNAL=
 PKG_PULSEAUDIO_STATIC_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
 PKG_PULSEAUDIO_STATIC_INCLUDE_DIRS:INTERNAL=
-PKG_PULSEAUDIO_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu/pulseaudio;-lpulse-simple;-lpulsecommon-13.99;-lpulse;-lpulsecommon-13.99
-PKG_PULSEAUDIO_STATIC_LDFLAGS_OTHER:INTERNAL=
+PKG_PULSEAUDIO_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu/pulseaudio;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu/pulseaudio;-lpulse-simple;-pthread;-lpulsecommon-15.99;-lpulse;-pthread;-lpulsecommon-15.99
+PKG_PULSEAUDIO_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 PKG_PULSEAUDIO_STATIC_LIBDIR:INTERNAL=
-PKG_PULSEAUDIO_STATIC_LIBRARIES:INTERNAL=pulse-simple;pulsecommon-13.99;pulse;pulsecommon-13.99
-PKG_PULSEAUDIO_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu/pulseaudio
+PKG_PULSEAUDIO_STATIC_LIBRARIES:INTERNAL=pulse-simple;pulsecommon-15.99;pulse;pulsecommon-15.99
+PKG_PULSEAUDIO_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pulseaudio;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pulseaudio
 PKG_PULSEAUDIO_STATIC_LIBS:INTERNAL=
 PKG_PULSEAUDIO_STATIC_LIBS_L:INTERNAL=
 PKG_PULSEAUDIO_STATIC_LIBS_OTHER:INTERNAL=
 PKG_PULSEAUDIO_STATIC_LIBS_PATHS:INTERNAL=
-PKG_PULSEAUDIO_VERSION:INTERNAL=13.99.1
+PKG_PULSEAUDIO_VERSION:INTERNAL=15.99.1
 PKG_PULSEAUDIO_libpulse-simple_INCLUDEDIR:INTERNAL=
 PKG_PULSEAUDIO_libpulse-simple_LIBDIR:INTERNAL=
 PKG_PULSEAUDIO_libpulse-simple_PREFIX:INTERNAL=
@@ -1868,8 +1760,6 @@ SDL_VIDEO_DRIVER_X11_HAS_XKBKEYCODETOKEYSYM:INTERNAL=1
 SIZEOF_SIZE_T:INTERNAL=8
 //Have include stddef.h;stdarg.h;stdlib.h;string.h;stdio.h;wchar.h;float.h
 STDC_HEADERS:INTERNAL=1
-//Result of TRY_COMPILE
-THREADS_HAVE_PTHREAD_ARG:INTERNAL=TRUE
 VIDEO_RPI_CFLAGS:INTERNAL=
 VIDEO_RPI_CFLAGS_I:INTERNAL=
 VIDEO_RPI_CFLAGS_OTHER:INTERNAL=
@@ -1905,11 +1795,11 @@ WAYLAND_CFLAGS_OTHER:INTERNAL=
 WAYLAND_FOUND:INTERNAL=1
 WAYLAND_INCLUDEDIR:INTERNAL=
 WAYLAND_INCLUDE_DIRS:INTERNAL=
-WAYLAND_LDFLAGS:INTERNAL=-lwayland-egl;-lwayland-client;-lwayland-cursor;-lEGL;-lxkbcommon
+WAYLAND_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lwayland-egl;-lwayland-client;-lwayland-cursor;-lEGL;-lxkbcommon
 WAYLAND_LDFLAGS_OTHER:INTERNAL=
 WAYLAND_LIBDIR:INTERNAL=
 WAYLAND_LIBRARIES:INTERNAL=wayland-egl;wayland-client;wayland-cursor;EGL;xkbcommon
-WAYLAND_LIBRARY_DIRS:INTERNAL=
+WAYLAND_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 WAYLAND_LIBS:INTERNAL=
 WAYLAND_LIBS_L:INTERNAL=
 WAYLAND_LIBS_OTHER:INTERNAL=
@@ -1920,11 +1810,11 @@ WAYLAND_STATIC_CFLAGS:INTERNAL=
 WAYLAND_STATIC_CFLAGS_I:INTERNAL=
 WAYLAND_STATIC_CFLAGS_OTHER:INTERNAL=
 WAYLAND_STATIC_INCLUDE_DIRS:INTERNAL=
-WAYLAND_STATIC_LDFLAGS:INTERNAL=-lwayland-egl;-lwayland-client;-lwayland-cursor;-lEGL;-lxkbcommon
-WAYLAND_STATIC_LDFLAGS_OTHER:INTERNAL=
+WAYLAND_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lwayland-egl;-lwayland-cursor;-lwayland-client;-lm;-pthread;-lffi;-lEGL;-lxkbcommon
+WAYLAND_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 WAYLAND_STATIC_LIBDIR:INTERNAL=
-WAYLAND_STATIC_LIBRARIES:INTERNAL=wayland-egl;wayland-client;wayland-cursor;EGL;xkbcommon
-WAYLAND_STATIC_LIBRARY_DIRS:INTERNAL=
+WAYLAND_STATIC_LIBRARIES:INTERNAL=wayland-egl;wayland-cursor;wayland-client;m;ffi;EGL;xkbcommon
+WAYLAND_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
 WAYLAND_STATIC_LIBS:INTERNAL=
 WAYLAND_STATIC_LIBS_L:INTERNAL=
 WAYLAND_STATIC_LIBS_OTHER:INTERNAL=
@@ -1939,12 +1829,12 @@ WAYLAND_wayland-client_INCLUDEDIR:INTERNAL=/usr/include
 WAYLAND_wayland-client_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 WAYLAND_wayland-client_MODULE_NAME:INTERNAL=wayland-client
 WAYLAND_wayland-client_PREFIX:INTERNAL=/usr
-WAYLAND_wayland-client_VERSION:INTERNAL=1.18.0
+WAYLAND_wayland-client_VERSION:INTERNAL=1.20.0
 WAYLAND_wayland-cursor_INCLUDEDIR:INTERNAL=/usr/include
 WAYLAND_wayland-cursor_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 WAYLAND_wayland-cursor_MODULE_NAME:INTERNAL=wayland-cursor
 WAYLAND_wayland-cursor_PREFIX:INTERNAL=/usr
-WAYLAND_wayland-cursor_VERSION:INTERNAL=1.18.0
+WAYLAND_wayland-cursor_VERSION:INTERNAL=1.20.0
 WAYLAND_wayland-egl_INCLUDEDIR:INTERNAL=/usr/include
 WAYLAND_wayland-egl_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 WAYLAND_wayland-egl_MODULE_NAME:INTERNAL=wayland-egl
@@ -1954,15 +1844,13 @@ WAYLAND_xkbcommon_INCLUDEDIR:INTERNAL=/usr/include
 WAYLAND_xkbcommon_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 WAYLAND_xkbcommon_MODULE_NAME:INTERNAL=xkbcommon
 WAYLAND_xkbcommon_PREFIX:INTERNAL=/usr
-WAYLAND_xkbcommon_VERSION:INTERNAL=0.10.0
+WAYLAND_xkbcommon_VERSION:INTERNAL=1.4.0
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 __pkg_config_arguments_EGL:INTERNAL=egl
 __pkg_config_arguments_KMSDRM:INTERNAL=libdrm;gbm;egl
 __pkg_config_arguments_LIBDECOR:INTERNAL=libdecor-0
 __pkg_config_arguments_PC_Magick++:INTERNAL=QUIET;Magick++
-__pkg_config_arguments_PC_MagickCore:INTERNAL=QUIET;MagickCore
-__pkg_config_arguments_PC_MagickWand:INTERNAL=QUIET;MagickWand
 __pkg_config_arguments_PKG_PULSEAUDIO:INTERNAL=libpulse-simple
 __pkg_config_arguments_WAYLAND:INTERNAL=wayland-client>=1.18;wayland-egl;wayland-cursor;egl;xkbcommon>=0.5.0
 __pkg_config_checked_DBUS:INTERNAL=1
@@ -1972,8 +1860,6 @@ __pkg_config_checked_KMSDRM:INTERNAL=1
 __pkg_config_checked_LIBDECOR:INTERNAL=1
 __pkg_config_checked_LIBUSB:INTERNAL=1
 __pkg_config_checked_PC_Magick++:INTERNAL=1
-__pkg_config_checked_PC_MagickCore:INTERNAL=1
-__pkg_config_checked_PC_MagickWand:INTERNAL=1
 __pkg_config_checked_PKG_ESD:INTERNAL=1
 __pkg_config_checked_PKG_JACK:INTERNAL=1
 __pkg_config_checked_PKG_PIPEWIRE:INTERNAL=1
@@ -2006,12 +1892,6 @@ pkgcfg_lib_PC_Magick++_Magick++-7.Q16HDRI-ADVANCED:INTERNAL=1
 pkgcfg_lib_PC_Magick++_MagickCore-7.Q16HDRI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_Magick++_MagickWand-7.Q16HDRI
 pkgcfg_lib_PC_Magick++_MagickWand-7.Q16HDRI-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_PC_MagickCore_MagickCore-7.Q16HDRI
-pkgcfg_lib_PC_MagickCore_MagickCore-7.Q16HDRI-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_PC_MagickWand_MagickCore-7.Q16HDRI
-pkgcfg_lib_PC_MagickWand_MagickCore-7.Q16HDRI-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_PC_MagickWand_MagickWand-7.Q16HDRI
-pkgcfg_lib_PC_MagickWand_MagickWand-7.Q16HDRI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PKG_PULSEAUDIO_pulse
 pkgcfg_lib_PKG_PULSEAUDIO_pulse-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PKG_PULSEAUDIO_pulse-simple
@@ -2026,5 +1906,5 @@ pkgcfg_lib_WAYLAND_wayland-cursor-ADVANCED:INTERNAL=1
 pkgcfg_lib_WAYLAND_wayland-egl-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_WAYLAND_xkbcommon
 pkgcfg_lib_WAYLAND_xkbcommon-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/local/lib
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 
