@@ -12,7 +12,24 @@ src/main.cpp
 # FILE(GLOB sources "src/**.cpp" "src/**.h")
 # file(GLOB sources RELATIVE "src/" "**.cpp" "**.h")
 
-# find_package(Threads REQUIRED)
+find_package(ImageMagick COMPONENTS Magick++ REQUIRED)
+
+if(NOT ImageMagick_FOUND)
+  message(STATUS "ImageMagick not found, installing it...")
+  message(STATUS "${CMAKE_SOURCE_DIR}/submodules/ImageMagick")
+  # execute_process(
+  #   COMMAND ./configure
+  #   WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/submodules/ImageMagick"
+  # )
+  # execute_process(
+  #   COMMAND make
+  #   WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/submodules/ImageMagick"
+  # )
+  # execute_process(
+  #   COMMAND make install
+  #   WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/submodules/ImageMagick"
+  # )
+endif()
 
 add_executable(FaceRecognition ${sources})
 
@@ -23,6 +40,7 @@ add_subdirectory(submodules/imgui)
 target_include_directories(${PROJECT_NAME}
   PUBLIC submodules/SDL/include 
   PUBLIC submodules/imgui
+  PUBLIC ${ImageMagick_INCLUDE_DIRS}
 )
 
 target_link_directories(${PROJECT_NAME}
@@ -32,8 +50,12 @@ target_link_directories(${PROJECT_NAME}
 # target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
 target_link_libraries(imgui SDL2 GL)
 
+add_definitions( -DMAGICKCORE_QUANTUM_DEPTH=16 )
+add_definitions( -DMAGICKCORE_HDRI_ENABLE=0 )
+
 target_link_libraries(${PROJECT_NAME}
   SDL2 SDL2main
   imgui
+  ${ImageMagick_LIBRARIES}
   ${CMAKE_DL_LIBS}
 )

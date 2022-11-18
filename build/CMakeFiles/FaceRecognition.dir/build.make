@@ -94,6 +94,7 @@ FaceRecognition: CMakeFiles/FaceRecognition.dir/src/main.cpp.o
 FaceRecognition: CMakeFiles/FaceRecognition.dir/build.make
 FaceRecognition: submodules/SDL/libSDL2maind.a
 FaceRecognition: submodules/imgui/libimgui.a
+FaceRecognition: /usr/local/lib/libMagick++-7.Q16HDRI.so
 FaceRecognition: submodules/SDL/libSDL2-2.0d.so.0.2300.0
 FaceRecognition: CMakeFiles/FaceRecognition.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ignacio/Desktop/face-recognition/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable FaceRecognition"
