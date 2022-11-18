@@ -15,20 +15,20 @@ src/main.cpp
 find_package(ImageMagick COMPONENTS Magick++ REQUIRED)
 
 if(NOT ImageMagick_FOUND)
+  set(ImageMagickSubmoduleDir "${CMAKE_SOURCE_DIR}/submodules/ImageMagick")
   message(STATUS "ImageMagick not found, installing it...")
-  message(STATUS "${CMAKE_SOURCE_DIR}/submodules/ImageMagick")
-  # execute_process(
-  #   COMMAND ./configure
-  #   WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/submodules/ImageMagick"
-  # )
-  # execute_process(
-  #   COMMAND make
-  #   WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/submodules/ImageMagick"
-  # )
-  # execute_process(
-  #   COMMAND make install
-  #   WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/submodules/ImageMagick"
-  # )
+  execute_process(
+    COMMAND ./configure
+    WORKING_DIRECTORY "${ImageMagickSubmoduleDir}"
+  )
+  execute_process(
+    COMMAND make
+    WORKING_DIRECTORY "${ImageMagickSubmoduleDir}"
+  )
+  execute_process(
+    COMMAND sudo make install
+    WORKING_DIRECTORY "${ImageMagickSubmoduleDir}"
+  )
 endif()
 
 add_executable(FaceRecognition ${sources})
@@ -47,7 +47,7 @@ target_link_directories(${PROJECT_NAME}
   PUBLIC build/src/SDL
 )
 
-# target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
+target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
 target_link_libraries(imgui SDL2 GL)
 
 add_definitions( -DMAGICKCORE_QUANTUM_DEPTH=16 )

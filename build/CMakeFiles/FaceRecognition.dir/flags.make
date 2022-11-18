@@ -6,5 +6,5 @@ CXX_DEFINES = -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
 
 CXX_INCLUDES = -I/home/ignacio/Desktop/face-recognition/submodules/SDL/include -I/home/ignacio/Desktop/face-recognition/submodules/imgui -I/usr/local/include/ImageMagick-7
 
-CXX_FLAGS =  -pthread -Wall -Werror -std=c++17 -g
+CXX_FLAGS =  -pthread -Wall -Werror -std=c++17 -g -Wall
 
