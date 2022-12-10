@@ -27,15 +27,15 @@ void NeuralSystem::printNeuralSystem() {
 }
 
 
-void NeuralSystem::computeData(std::vector<int> pixelMap){
+void NeuralSystem::computeData(std::vector<FakePixel> &pixelMap){
   if(pixelMap.size() > (std::size_t)this->MAX_PIXELS_AMOUNT){
     std::cout << "Too many pixels" << std::endl;
     return;
   }
-  for(std::size_t i = 0; i < pixelMap.size(); i++){
-    std::cout << pixelMap[i] << std::endl;
-  }
-  std::cout << "Computing data..." << std::endl;
+  // for(std::size_t i = 0; i < pixelMap.size(); i++){
+  //   std::cout << pixelMap[i] << std::endl;
+  // }
+  // std::cout << "Computing data..." << std::endl;
 };
 
 void NeuralSystem::processPixel(int pixel){
