@@ -9,6 +9,7 @@
 #include "image-processor/ImageProcessor.h"
 #include "image-processor/ImageProcessor.cpp"
 #include <SDL2/SDL.h>
+#include <neural-system/NeuralSystem.h>
 
 WindowManager windowManager;
 Gui gui;
@@ -19,5 +20,6 @@ int main (){
   std::thread imageProcess(&ImageProcessor::readImage, &imageProcessor);
   imageProcess.join();
   window.join();
+  NeuralSystem neuralSystem();
   return 0;
 }
