@@ -15,8 +15,9 @@ Gui gui;
 ImageProcessor imageProcessor;
 
 int main (){
-  // std::thread window(&WindowManager::createWindow, &windowManager);
-  imageProcessor.readImage();
-  // window.join();
+  std::thread window(&WindowManager::createWindow, &windowManager);
+  std::thread imageProcess(&ImageProcessor::readImage, &imageProcessor);
+  imageProcess.join();
+  window.join();
   return 0;
 }
