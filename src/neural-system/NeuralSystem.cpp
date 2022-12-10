@@ -1,5 +1,6 @@
 #include "NeuralSystem.h"
 #include "neuron/Neuron.h"
+#include "neuron/Neuron.cpp"
 #include <iostream>
 
 NeuralSystem::NeuralSystem(){
@@ -19,7 +20,7 @@ NeuralSystem::NeuralSystem(){
 };
 
 void NeuralSystem::printNeuralSystem() {
-  for(int i = 0; i < this->neurons.size(); i++){
+  for(std::size_t i = 0; i < this->neurons.size(); i++){
     std::cout << "Neuron " << i << " row: " << this->neurons[i].rowColId[0] << 
     " col: " << this->neurons[i].rowColId[1] << std::endl;
   }
@@ -27,11 +28,11 @@ void NeuralSystem::printNeuralSystem() {
 
 
 void NeuralSystem::computeData(std::vector<int> pixelMap){
-  if(pixelMap.size() > this->MAX_PIXELS_AMOUNT){
+  if(pixelMap.size() > (std::size_t)this->MAX_PIXELS_AMOUNT){
     std::cout << "Too many pixels" << std::endl;
     return;
   }
-  for(int i = 0; i < pixelMap.size(); i++){
+  for(std::size_t i = 0; i < pixelMap.size(); i++){
     std::cout << pixelMap[i] << std::endl;
   }
   std::cout << "Computing data..." << std::endl;

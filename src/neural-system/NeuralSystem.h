@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include "neuron/Neuron.h"
 
 class NeuralSystem {
   int LAYERS = 5;
