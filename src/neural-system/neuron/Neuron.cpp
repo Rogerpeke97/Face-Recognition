@@ -2,9 +2,18 @@
 #include "weight/NeuronWeight.h"
 #include "weight/NeuronWeight.cpp"
 
-Neuron::Neuron() {
-  weights.reserve(WEIGHTS_AMOUNT);
-  for(int i = 0; i < WEIGHTS_AMOUNT; i++){
+Neuron::Neuron(int weightsAmount) {
+  this->weightsAmount = weightsAmount;
+  weights.reserve(weightsAmount);
+  for(int i = 0; i < weightsAmount; i++){
     weights.push_back(NeuronWeight(i));
   }
 }
+
+// void Neuron::computePixel(FakePixel &pixel){
+  
+// }
+
+// bool Neuron::outputToOtherNeurons(){
+  
+// }

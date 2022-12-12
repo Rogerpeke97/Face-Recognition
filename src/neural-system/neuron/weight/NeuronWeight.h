@@ -2,7 +2,7 @@
 
 class NeuronWeight {
   public:
-    int amount = 0;
+    int weight = 1;
     int weightId;
     NeuronWeight(int id);
 };

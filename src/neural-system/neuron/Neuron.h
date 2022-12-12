@@ -4,9 +4,11 @@
 
 class Neuron {
   public:
-    int WEIGHTS_AMOUNT = 4;
     int threshold = 0;
+    int weightsAmount;
     std::vector<int> rowColId;
     std::vector<NeuronWeight> weights;
-    Neuron();
+    Neuron(int amountOfWeights);
+    // void computePixel(FakePixel &pixel);
+    // bool outputToOtherNeurons();
 };

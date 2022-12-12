@@ -42,8 +42,8 @@ int main (){
       fakePixels.push_back(FakePixel{col, row, randNumBetween(255, 0), randNumBetween(255, 0), randNumBetween(255, 0)});
     }
   }
-  printFakePixels(fakePixels);
-  NeuralSystem neuralSystem;
-  neuralSystem.computeData(fakePixels);
+  // printFakePixels(fakePixels);
+  NeuralSystem *neuralSystem = new NeuralSystem();
+  neuralSystem->computeData(fakePixels);
   return 0;
 }
